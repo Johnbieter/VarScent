@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using System.IO.Ports;
+using System.IO.Ports;
 
 
 public class ReadValue : MonoBehaviour
@@ -14,11 +14,11 @@ public class ReadValue : MonoBehaviour
     public float log;
     private int intLog;
 
-    //SerialPort port = new SerialPort("COM8", 9600);
+    SerialPort port = new SerialPort("COM4", 9600);
 
     private void Start()
     {
-        //port.Open();
+        port.Open();
     }
 
     // Drag & Drop the gameobject, child of a Canvas holding a Text component
@@ -28,23 +28,18 @@ public class ReadValue : MonoBehaviour
     {
         log = Vector3.Distance(objectA.position, objectB.position);
 
-        Debug.Log(log);
+        //Debug.Log(log);
 
-        if (log >= 10)
+        if (log <= 5)
         {
-            //port.Write("A");
+            Debug.Log("Writing");
+            port.Write("1");
+            //log = 5000;
             
         }
-        else if (log <= 10 && log >= 5)
+        else
         {
-            //port.Write("B");
-        }
-        else if (log <= 5)
-        {
-            Debug.Log("Sending");
-            //port.Write("C");
-            
-
+            port.Write("0");
         }
     }
 }
