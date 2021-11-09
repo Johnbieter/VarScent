@@ -14,7 +14,7 @@ public class ReadValue : MonoBehaviour
     public float log;
     private int intLog;
 
-    SerialPort port = new SerialPort("COM4", 9600);
+    SerialPort port = new SerialPort("COM6", 9600);
 
     private void Start()
     {
@@ -32,13 +32,14 @@ public class ReadValue : MonoBehaviour
 
         if (log <= 5)
         {
-            Debug.Log("Writing");
-            port.Write("1");
+            Debug.Log("Writing 1");
+            port.Write("2");
             //log = 5000;
             
         }
         else
         {
+            Debug.Log("Writing 0");
             port.Write("0");
         }
     }
