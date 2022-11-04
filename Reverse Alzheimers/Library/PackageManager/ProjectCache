@@ -34,7 +34,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Editor
-      type: 
+      type: asset
       description: The Version Control package gives you the ability to use either
         Collaborate or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic
         SCM for Unity (beta), a Plastic SCM subscription is required. Learn more
@@ -169,7 +169,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -195,7 +195,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: The JetBrains Rider Editor package provides an integration for
         using the JetBrains Rider IDE as a code editor for Unity. It adds support
         for generating .csproj files for code completion and auto-discovery of installations.
@@ -290,7 +290,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -316,7 +316,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Code editor integration for supporting Visual Studio as code editor
         for unity. Adds support for generating csproj files for intellisense purposes,
         auto discovery of installations, etc.
@@ -385,7 +385,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -411,7 +411,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Code editor integration for supporting Visual Studio Code as code
         editor for unity. Adds support for generating csproj files for intellisense
         purposes, auto discovery of installations, etc.
@@ -458,7 +458,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -484,7 +484,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Unity Test Framework
-      type: 
+      type: asset
       description: Test framework for running Edit mode and Play mode tests in Unity.
       status: 4
       errors: []
@@ -563,7 +563,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -589,7 +589,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Text Rendering
-      type: 
+      type: asset
       description: 'TextMeshPro is the ultimate text solution for Unity. It''s the
         perfect replacement for Unity''s UI Text and the legacy Text Mesh.
 
@@ -729,7 +729,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -986,7 +986,7 @@ m_PackageAssets:
         email: 
         url: 
       category: XR
-      type: 
+      type: asset
       description: A high-level, component-based, interaction system for creating
         VR and AR experiences. It provides a framework that makes 3D and UI interactions
         available from Unity input events. The core of this system is a set of base
@@ -1019,6 +1019,7 @@ m_PackageAssets:
         - 2.0.1
         - 2.0.2
         - 2.0.3
+        - 2.0.4
         - 2.1.0-pre.1
         - 2.1.1
         - 2.2.0
@@ -1044,6 +1045,7 @@ m_PackageAssets:
         - 2.0.1
         - 2.0.2
         - 2.0.3
+        - 2.0.4
         - 2.1.0-pre.1
         - 2.1.1
         - 2.2.0
@@ -1095,7 +1097,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1121,7 +1123,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Package that provides simple management of XR plug-ins. Manages
         and offers help with loading, initialization, settings, and build support
         for XR plug-ins.
@@ -1232,7 +1234,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -1258,7 +1260,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Provides display and input support for Oculus devices.
       status: 4
       errors: []
@@ -1318,6 +1320,7 @@ m_PackageAssets:
         - 2.0.0-preview.4
         - 2.0.0-preview.5
         - 2.0.2-preview.1
+        - 2.2.0-preview.1
         - 3.0.0-pre.1
         - 3.0.0-pre.2
         - 3.0.0-pre.4
@@ -1326,6 +1329,7 @@ m_PackageAssets:
         - 3.0.2
         - 3.1.1
         - 3.2.1
+        - 3.2.2-pre.1
         compatible:
         - 1.10.0
         - 1.10.1-preview.3
@@ -1380,7 +1384,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -3148,7 +3152,7 @@ m_PackageAssets:
         email: 
         url: 
       category: XR
-      type: 
+      type: asset
       description: This package includes the tracked pose driver for the legacy input
         system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
         Pose Driver. The Tracked Pose Driver is a behavior that enables GameObjects
@@ -3219,7 +3223,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -3245,7 +3249,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: Provides internal registration mechanism for standalone subsystems. 
         It allows a standalone subsystem to inform the Subsystem Manager of its existence.
       status: 4
@@ -3279,7 +3283,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -3305,7 +3309,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: 
+      type: asset
       description: A new input system which can be used as a more extensible and
         customizable alternative to Unity's classic input system in UnityEngine.Input.
       status: 4
@@ -3347,6 +3351,7 @@ m_PackageAssets:
         - 1.4.1
         - 1.4.2
         - 1.4.3
+        - 1.4.4
         compatible:
         - 0.1.2-preview
         - 0.2.0-preview
@@ -3383,6 +3388,7 @@ m_PackageAssets:
         - 1.4.1
         - 1.4.2
         - 1.4.3
+        - 1.4.4
         verified: 1.0.2
       dependencies: []
       resolvedDependencies: []
@@ -3403,7 +3409,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
@@ -3429,7 +3435,7 @@ m_PackageAssets:
         email: 
         url: 
       category: Libraries
-      type: 
+      type: asset
       description: Custom version of the nunit package build to work with Unity.
         Used by the Unity Test Framework.
       status: 4
@@ -3468,7 +3474,7 @@ m_PackageAssets:
         isDefault: 1
         capabilities: 7
       hasRegistry: 1
-      hideInEditor: 1
+      hideInEditor: 0
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
