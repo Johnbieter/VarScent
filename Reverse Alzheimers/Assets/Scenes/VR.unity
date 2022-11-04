@@ -1285,7 +1285,8 @@ MonoBehaviour:
   - {fileID: 489936934}
   - {fileID: 1816602090}
   - {fileID: 1081087197}
-  timeLookedOnObject: []
+  objectSpotted: 
+  timeOnWrong: 0
   correctObject: 0
   timeToCorrectObject: 0
   correctObjectFound: 0
@@ -1303,7 +1304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDataList:
     data: []
-  info: {fileID: 0}
+  info: {fileID: 997236801}
 --- !u!1001 &1081087196
 PrefabInstance:
   m_ObjectHideFlags: 0

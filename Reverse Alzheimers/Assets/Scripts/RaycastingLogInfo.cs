@@ -6,24 +6,28 @@ public class RaycastingLogInfo : MonoBehaviour
 {
 
     public List<GameObject> objectsToLog;
-    public List<float> timeLookedOnObject;
+    public List<bool> objectSpotted;
+    public float timeOnWrong;
 
     public int correctObject;
     public float timeToCorrectObject;
+    public float timeOnCorrectObject;
     public bool correctObjectFound = false;
-
-    private void Start()
+    public float time;
+    void Start()
     {
 
         for (var i = 0; i < objectsToLog.Count; i++)
         {
-            timeLookedOnObject.Add(0f);
+            objectSpotted.Add(false);
         }
-        
+       
     }
+    
 
     void Update()
     {
+        time += Time.deltaTime;
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
@@ -37,15 +41,24 @@ public class RaycastingLogInfo : MonoBehaviour
                 if (lookObject.name == objectsToLog[i].name)
                 {
                     Debug.Log("Object found");
-                    timeLookedOnObject[i] += Time.deltaTime;
 
-                    if (!correctObjectFound)
+                    if (i == correctObject)
                     {
-                        if (i == correctObject)
+                        if (!correctObjectFound)
                         {
-                            timeToCorrectObject = Time.time;
+                            timeToCorrectObject = time;
                             correctObjectFound = true;
                         }
+                        timeOnCorrectObject += Time.deltaTime;
+
+                    }
+                    else 
+                    {
+                        if (!correctObjectFound)
+                        {
+                            objectSpotted[i] = true;
+                        }
+                        timeOnWrong += Time.deltaTime;
                     }
                 }
             }
