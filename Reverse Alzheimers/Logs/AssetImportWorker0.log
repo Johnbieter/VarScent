@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.1098; Version 2009; 64bit' Language: 'en' Physical Memory: 15776 MB
+OS: 'Windows 10 Home; OS build 22000.1219; Version 2009; 64bit' Language: 'en' Physical Memory: 15776 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,12 +15,12 @@ C:/Users/lifeu/OneDrive/Documents/GitHub/VarScent/Reverse Alzheimers
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62033
+62269
 Successfully changed project path to: C:/Users/lifeu/OneDrive/Documents/GitHub/VarScent/Reverse Alzheimers
 C:/Users/lifeu/OneDrive/Documents/GitHub/VarScent/Reverse Alzheimers
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.48 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.76 ms.
+Refreshing native plugins compatible for Editor in 73.60 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 1.19 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/lifeu/OneDrive/Documents/GitHub/VarScent/Reverse Alzheimers/Assets
@@ -35,106 +35,56 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001255 seconds.
+Registered in 0.002934 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 30.48 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 66.44 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.794 seconds
+- Completed reload, in  1.419 seconds
 Domain Reload Profiling:
-	ReloadAssembly (794ms)
-		BeginReloadAssembly (40ms)
+	ReloadAssembly (1419ms)
+		BeginReloadAssembly (67ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (306ms)
-			LoadAssemblies (38ms)
+		EndReloadAssembly (543ms)
+			LoadAssemblies (64ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (106ms)
+			SetupTypeCache (171ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (126ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (238ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (31ms)
-				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (59ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (19ms)
+				ProcessInitializeOnLoadAttributes (103ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002923 seconds.
+Registered in 0.005818 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001D822FEFA00 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD8989B0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD67C020 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD7122E0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD5D2A10 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD8989B0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82211F020 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D822042430 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD8989B0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD146960 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD67C020 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82271B010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD5D2A10 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8228CA010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D821E7C010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD5619B0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD48AA40 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D821E7C010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD65DE30 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FDD82030 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Management.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D821EA2220 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FDE95430 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D823617020 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD535790 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82200E240 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Oculus.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.95 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 57.13 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004e] in <49bec7d900ab46689d83f3113d84f058>:0 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in <49bec7d900ab46689d83f3113d84f058>:0 
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
   at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
    --- End of inner exception stack trace ---
@@ -148,262 +98,124 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.886 seconds
+- Completed reload, in  1.557 seconds
 Domain Reload Profiling:
-	ReloadAssembly (887ms)
-		BeginReloadAssembly (104ms)
+	ReloadAssembly (1558ms)
+		BeginReloadAssembly (196ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (739ms)
-			LoadAssemblies (71ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1289ms)
+			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (329ms)
+			SetupTypeCache (336ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (599ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (32ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (215ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				RefreshPlugins (57ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (401ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.48 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1975 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.6 MB.
+System memory in use after: 102.7 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2448.
+Total: 4.473200 ms (FindLiveObjects: 0.218600 ms CreateObjectMapping: 0.074500 ms MarkObjects: 4.147800 ms  DeleteObjects: 0.031400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Ardity/Setup Guide.pdf
+  artifactKey: Guid(8f2f455235421ee4c876e07c92dc3b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ardity/Setup Guide.pdf using Guid(8f2f455235421ee4c876e07c92dc3b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86965592ede48e1951dabb0165ad8164') in 0.032513 seconds 
+  Import took 0.036429 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004740 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <5ad584e208e14caaa9e6b2e6027e9204>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.418 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1418ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1167ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (403ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (474ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.02 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
 Unloading 1944 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 98.0 MB.
-System memory in use after: 98.1 MB.
+System memory in use before: 116.1 MB.
+System memory in use after: 116.2 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2408.
-Total: 2.941200 ms (FindLiveObjects: 0.198100 ms CreateObjectMapping: 0.047400 ms MarkObjects: 2.676700 ms  DeleteObjects: 0.018300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/New Material.mat
-  artifactKey: Guid(08d730791ced14c469bebff67ffeff1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Material.mat using Guid(08d730791ced14c469bebff67ffeff1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db0517a11ed06512e3cc1c1b483d3dd') in 0.096355 seconds 
-  Import took 0.099317 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/New Material 3.mat
-  artifactKey: Guid(7ec97b659f6848045b90e1d9cbc4d3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Material 3.mat using Guid(7ec97b659f6848045b90e1d9cbc4d3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67cde899f328bf68846bea1d7ccabe8d') in 0.021950 seconds 
-  Import took 0.024543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/New Material 2.mat
-  artifactKey: Guid(06edcbff65abb7442be3ac0d81f5c43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Material 2.mat using Guid(06edcbff65abb7442be3ac0d81f5c43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc93ea1ab7f2352b0b3bcf82bc6013d') in 0.012014 seconds 
-  Import took 0.014756 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Hand.prefab
-  artifactKey: Guid(bc1d87bd860270943a4d694cb17e2ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hand.prefab using Guid(bc1d87bd860270943a4d694cb17e2ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c53b520a6698701d331a1fff166c147') in 0.025171 seconds 
-  Import took 0.029027 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000166 seconds.
-  path: Assets/SPIKEY_SUCCULENT_5K.obj
-  artifactKey: Guid(36c4e54c84722fc4880fd9e55d2fcca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SPIKEY_SUCCULENT_5K.obj using Guid(36c4e54c84722fc4880fd9e55d2fcca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46ede9a0d1bfa6785bd09e08f6f723f') in 0.079883 seconds 
-  Import took 0.082526 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/RH_posters_botanical_obj.obj
-  artifactKey: Guid(f406406a3f02c7c40a79d888727f8d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RH_posters_botanical_obj.obj using Guid(f406406a3f02c7c40a79d888727f8d22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a6bb24fd1efe5f976d0943a5ab5ec8') in 0.313426 seconds 
-  Import took 0.316500 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/download (1).jpg
-  artifactKey: Guid(1b17ce2339541544e8ec7efb5ca20f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/download (1).jpg using Guid(1b17ce2339541544e8ec7efb5ca20f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2969e4df9efc744125d03ec1ed44835') in 0.044806 seconds 
-  Import took 0.047383 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/New Terrain.asset
-  artifactKey: Guid(913bb7b664e0e8f42ab789e0568da74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Terrain.asset using Guid(913bb7b664e0e8f42ab789e0568da74e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b71dee73ef82fc9180cbf5b08ac5b5') in 0.053404 seconds 
-  Import took 0.056247 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/New Material 1.mat
-  artifactKey: Guid(1b005dcf7c4ed1340bb3b5825055a5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/New Material 1.mat using Guid(1b005dcf7c4ed1340bb3b5825055a5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e58863e6317e42359b97bae5ad6b6f28') in 0.021157 seconds 
-  Import took 0.023981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.688754 seconds.
-  path: Assets/XR/Loaders/Oculus Loader.asset
-  artifactKey: Guid(cfa07241e77133445b1233705a412fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/Loaders/Oculus Loader.asset using Guid(cfa07241e77133445b1233705a412fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a758d778a2c6d0d5474dada4131454e') in 0.006846 seconds 
-  Import took 0.009737 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.021402 seconds.
-  path: Assets/Black Rain Texture Pack
-  artifactKey: Guid(e1e327f4d36c6e549b1123bab391709f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack using Guid(e1e327f4d36c6e549b1123bab391709f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d2c1b52db50b8f6e3387fabe0ccebb') in 0.005829 seconds 
-  Import took 0.009269 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006881 seconds.
-  path: Assets/Black Rain Texture Pack
-  artifactKey: Guid(e1e327f4d36c6e549b1123bab391709f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack using Guid(e1e327f4d36c6e549b1123bab391709f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d2c1b52db50b8f6e3387fabe0ccebb') in 0.003846 seconds 
-  Import took 0.008050 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003686 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001D9FD5C6010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8238F7040 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD67C020 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D822533010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D821B33430 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD5000A0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D821E7C010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD61F010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FDB54860 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8286F5CD0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD67C020 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D825040080 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D821B33430 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D822385010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D825F43010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826A77680 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8284B87A0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD760DC0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D821DA7230 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D821C4D7F0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Management.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8223AB220 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8266338C0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D825FB1C20 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8286C1070 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD633A20 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Oculus.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004e] in <49bec7d900ab46689d83f3113d84f058>:0 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in <49bec7d900ab46689d83f3113d84f058>:0 
-  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <5ad584e208e14caaa9e6b2e6027e9204>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.811 seconds
-Domain Reload Profiling:
-	ReloadAssembly (811ms)
-		BeginReloadAssembly (97ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (667ms)
-			LoadAssemblies (67ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (210ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (285ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (205ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.54 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 1929 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 108.8 MB.
-System memory in use after: 108.9 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2459.
-Total: 11.890200 ms (FindLiveObjects: 0.221200 ms CreateObjectMapping: 0.050700 ms MarkObjects: 11.573500 ms  DeleteObjects: 0.042700 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2451.
+Total: 4.901200 ms (FindLiveObjects: 0.222800 ms CreateObjectMapping: 0.049900 ms MarkObjects: 4.594700 ms  DeleteObjects: 0.031300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -416,1152 +228,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 70.900862 seconds.
-  path: Assets/ToExport/Map_All.prefab
-  artifactKey: Guid(04acc0066b7423243a371fbab8a1c03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport/Map_All.prefab using Guid(04acc0066b7423243a371fbab8a1c03b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ee7b2d091f769b7d424e572dfd76f2') in 0.023400 seconds 
-  Import took 0.026739 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/ToExport/Plane (1).prefab
-  artifactKey: Guid(10df5f875e308c94fbe950be85296174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport/Plane (1).prefab using Guid(10df5f875e308c94fbe950be85296174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126bdce2b57ab09dc0f23db566d643af') in 0.038996 seconds 
-  Import took 0.042532 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/ToExport/Orange.prefab
-  artifactKey: Guid(3ea2b2998c0c626448b11043873239e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport/Orange.prefab using Guid(3ea2b2998c0c626448b11043873239e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2047e529063b8c7d7c7911157abeb7f5') in 0.014975 seconds 
-  Import took 0.017930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/ToExport/PeanutButter.prefab
-  artifactKey: Guid(594f242dfebbf594c83ad78dc58b3482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport/PeanutButter.prefab using Guid(594f242dfebbf594c83ad78dc58b3482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2273691d714665eccef85e1911dfa972') in 0.007982 seconds 
-  Import took 0.011078 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/ToExport/Pine_1_2.prefab
-  artifactKey: Guid(e24046ca855d45d428add0f854c9d3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport/Pine_1_2.prefab using Guid(e24046ca855d45d428add0f854c9d3f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08d2951ba74e057af83979357e9818f6') in 0.013902 seconds 
-  Import took 0.017242 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/ToExport/PlayerCapsule.prefab
-  artifactKey: Guid(027690170365f0448a0988a7d72d6397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport/PlayerCapsule.prefab using Guid(027690170365f0448a0988a7d72d6397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6125b27cb6ff6857ddd54eacce65cddf') in 0.018850 seconds 
-  Import took 0.022360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/ToExport/Table.prefab
-  artifactKey: Guid(7a5342742a2dd33449be939c5a99ebc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport/Table.prefab using Guid(7a5342742a2dd33449be939c5a99ebc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be731286e4060ac4c2c7a513a177aff') in 0.007874 seconds 
-  Import took 0.010592 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/ToExport/Plane.prefab
-  artifactKey: Guid(63a8ef984a27e2c4bae1bc7ad4de8546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport/Plane.prefab using Guid(63a8ef984a27e2c4bae1bc7ad4de8546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b07d5d7ca2d3176c72414057bc26a6') in 0.013769 seconds 
-  Import took 0.016965 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/ToExport/Table.prefab
-  artifactKey: Guid(7a5342742a2dd33449be939c5a99ebc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport/Table.prefab using Guid(7a5342742a2dd33449be939c5a99ebc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be731286e4060ac4c2c7a513a177aff') in 0.005799 seconds 
-  Import took 0.009258 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.436959 seconds.
-  path: Assets/Textures/Orange.mat
-  artifactKey: Guid(3687ab7d5e90f3f45b1f25e5f83ac6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Orange.mat using Guid(3687ab7d5e90f3f45b1f25e5f83ac6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f508ca794457db44d6affaca96164d10') in 0.022325 seconds 
-  Import took 0.025406 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Textures/Sky.renderTexture
-  artifactKey: Guid(62a7d2f59be4cae4fb92a43c621ce296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Sky.renderTexture using Guid(62a7d2f59be4cae4fb92a43c621ce296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fdb8715b4254a760feded414cdb8a14') in 0.017350 seconds 
-  Import took 0.020238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004100 seconds.
-  path: Assets/Textures/Sky.renderTexture
-  artifactKey: Guid(62a7d2f59be4cae4fb92a43c621ce296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Sky.renderTexture using Guid(62a7d2f59be4cae4fb92a43c621ce296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fdb8715b4254a760feded414cdb8a14') in 0.009503 seconds 
-  Import took 0.012477 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.530120 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(4a9a7e5efd31b994d914247f8d8e42ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(4a9a7e5efd31b994d914247f8d8e42ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41748d4a7ce17148c1b94707295db972') in 0.005025 seconds 
-  Import took 0.016652 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000867 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(4a9a7e5efd31b994d914247f8d8e42ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(4a9a7e5efd31b994d914247f8d8e42ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41748d4a7ce17148c1b94707295db972') in 0.002022 seconds 
-  Import took 0.005075 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.437139 seconds.
-  path: Assets/Scenes/DiagnosticScene.unity
-  artifactKey: Guid(60d0d75021c932b4084ac4db38db7636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/DiagnosticScene.unity using Guid(60d0d75021c932b4084ac4db38db7636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6af4101507da951505c82b0d03866ea') in 0.006161 seconds 
-  Import took 0.009237 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.705310 seconds.
-  path: Assets/ToExport
-  artifactKey: Guid(6a5d8840ee66d374991da34854392327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ToExport using Guid(6a5d8840ee66d374991da34854392327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f423d3f0cdd4fa1b5a9ee6f4aeb91785') in 0.006142 seconds 
-  Import took 0.009243 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.057901 seconds.
-  path: Assets/Export/Peanut.png
-  artifactKey: Guid(c64ddc1b42c96464597457069b2cfe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Export/Peanut.png using Guid(c64ddc1b42c96464597457069b2cfe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e47293a0a7bba5f7d710af01bbe0412') in 0.012456 seconds 
-  Import took 0.015644 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Export/Water 1.mat
-  artifactKey: Guid(c07a9f9cf9c4c14478b9d46ae3ce0879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Export/Water 1.mat using Guid(c07a9f9cf9c4c14478b9d46ae3ce0879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892c4c57d527ec5fb21ba4cf52775bd1') in 0.012154 seconds 
-  Import took 0.015285 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.510845 seconds.
-  path: Assets/Export/Water 1.shadergraph
-  artifactKey: Guid(f071bcd5e1daf834c85704c0db0fde1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Export/Water 1.shadergraph using Guid(f071bcd5e1daf834c85704c0db0fde1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e1bc6179ac167204b4663c81d0e851') in 0.003896 seconds 
-  Import took 0.006826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.757062 seconds.
-  path: Assets/3d models/adjustable working table.obj
-  artifactKey: Guid(180679ee048b41c43b6acbc99c8851e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3d models/adjustable working table.obj using Guid(180679ee048b41c43b6acbc99c8851e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000a9dfe09aab214922d0c4db7300d6f') in 0.095429 seconds 
-  Import took 0.099844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/3d models/controller_l.fbx
-  artifactKey: Guid(cd83c8dda72616e4a902e921a8da570a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3d models/controller_l.fbx using Guid(cd83c8dda72616e4a902e921a8da570a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee07e11c544f127f2b90908490f537fb') in 0.058489 seconds 
-  Import took 0.061073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/3d models/CONTE LG1.obj
-  artifactKey: Guid(a48ae0f347f727a4cb6570e2485801b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3d models/CONTE LG1.obj using Guid(a48ae0f347f727a4cb6570e2485801b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b75ee74c8c5207feadff3c8681c93535') in 0.028679 seconds 
-  Import took 0.031485 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/3d models/controller_r.fbx
-  artifactKey: Guid(115fbe7a1191077479815658e7e0cd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3d models/controller_r.fbx using Guid(115fbe7a1191077479815658e7e0cd38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7abba1476a88368ac82bd83a8278fc1') in 0.033854 seconds 
-  Import took 0.036410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.352846 seconds.
-  path: Assets/GrassFlowers/Post-Processing For GrassFlowers.asset
-  artifactKey: Guid(150fbd13cfcddb34ebc82b228a769165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GrassFlowers/Post-Processing For GrassFlowers.asset using Guid(150fbd13cfcddb34ebc82b228a769165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82330d328fb7c6f3c7986a64baf6dcf2') in 0.006438 seconds 
-  Import took 0.016345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.649902 seconds.
-  path: Assets/Materials/download (1).mat
-  artifactKey: Guid(8d643769ab26ea44abb458d5ea5afc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/download (1).mat using Guid(8d643769ab26ea44abb458d5ea5afc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139cd95dbaa516b07893e45ed7900e32') in 0.011669 seconds 
-  Import took 0.021818 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Materials/New Material.mat
-  artifactKey: Guid(0a14448a33adc9f409c99c36da68f08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/New Material.mat using Guid(0a14448a33adc9f409c99c36da68f08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3f9323a99b33ada136d5ece503695b') in 0.022455 seconds 
-  Import took 0.025237 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Materials/Rd.mat
-  artifactKey: Guid(185f8760afb2fe244bdf389e44e179a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Rd.mat using Guid(185f8760afb2fe244bdf389e44e179a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '205368ed5d95b94ae7216b0c574a6136') in 0.015351 seconds 
-  Import took 0.017991 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Materials/Gray.mat
-  artifactKey: Guid(b9a3f1489deecf1429c7502b0bb54c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Gray.mat using Guid(b9a3f1489deecf1429c7502b0bb54c50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebecdc0d841fdee59a9b1a8e9af1f7ea') in 0.012096 seconds 
-  Import took 0.015338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Materials/Sky.mat
-  artifactKey: Guid(fd6cce205ca897340860f102bc818cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Sky.mat using Guid(fd6cce205ca897340860f102bc818cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50fc83278dc13b767bcf2bb3e6e5265d') in 0.010488 seconds 
-  Import took 0.013400 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.623437 seconds.
-  path: Assets/Terrain Layers/Grass.terrainlayer
-  artifactKey: Guid(c31d430341fb8e848b13395ec053e742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain Layers/Grass.terrainlayer using Guid(c31d430341fb8e848b13395ec053e742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d166a5b8398f100c8681dc5db025434') in 0.129413 seconds 
-  Import took 0.136835 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.708278 seconds.
-  path: Assets/XR/XRGeneralSettings.asset
-  artifactKey: Guid(a3414461c3e125c4c9b59e4bda1b9f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/XR/XRGeneralSettings.asset using Guid(a3414461c3e125c4c9b59e4bda1b9f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75eb92fe7900fb81e8931c5f4a2b0ef2') in 0.010340 seconds 
-  Import took 0.013395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 142.274852 seconds.
-  path: Assets/Black Rain Texture Pack/Grass
-  artifactKey: Guid(09470d68328a5164fb20e44fb9c636ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack/Grass using Guid(09470d68328a5164fb20e44fb9c636ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30ab6a857cf210ca0de1dfae808826be') in 0.002032 seconds 
-  Import took 0.005272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.094062 seconds.
-  path: Assets/Black Rain Texture Pack/Grass/Grass01.psd
-  artifactKey: Guid(974988f6afb79914fb6694a6916e4751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack/Grass/Grass01.psd using Guid(974988f6afb79914fb6694a6916e4751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cb0694a89467009ebf6940fb6008f0') in 0.015497 seconds 
-  Import took 0.018937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000227 seconds.
-  path: Assets/Black Rain Texture Pack/Grass/NewLayer.terrainlayer
-  artifactKey: Guid(12171707ea08bc0439b7f6a9bf9dfdb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack/Grass/NewLayer.terrainlayer using Guid(12171707ea08bc0439b7f6a9bf9dfdb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f60761ad32f46e981ce54f8f714972') in 0.016012 seconds 
-  Import took 0.019067 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Black Rain Texture Pack/Grass/Grass02.psd
-  artifactKey: Guid(685f407b700ecdb4ebd0d9169c4d6a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack/Grass/Grass02.psd using Guid(685f407b700ecdb4ebd0d9169c4d6a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aefb524a1ca5eb1b158ed3f05d8666d') in 0.013823 seconds 
-  Import took 0.017195 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Black Rain Texture Pack/Grass/NewLayer 1.terrainlayer
-  artifactKey: Guid(c2912b56c3f24e449be4ed8f2a62af51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack/Grass/NewLayer 1.terrainlayer using Guid(c2912b56c3f24e449be4ed8f2a62af51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c68b12a4e111986dad1e55c53e33539') in 0.015390 seconds 
-  Import took 0.018439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.215582 seconds.
-  path: Assets/Black Rain Texture Pack/Dirt/Dirt01.psd
-  artifactKey: Guid(8bb59bec730bc6249a24a23b326156a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack/Dirt/Dirt01.psd using Guid(8bb59bec730bc6249a24a23b326156a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e7cd271d07a98f8f4605e45a3742ff4') in 0.015773 seconds 
-  Import took 0.019405 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001034 seconds.
-  path: Assets/Black Rain Texture Pack/Dirt/Dirt01.psd
-  artifactKey: Guid(8bb59bec730bc6249a24a23b326156a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack/Dirt/Dirt01.psd using Guid(8bb59bec730bc6249a24a23b326156a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e7cd271d07a98f8f4605e45a3742ff4') in 0.012495 seconds 
-  Import took 0.015752 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.395862 seconds.
-  path: Assets/Black Rain Texture Pack/Brick/Brick01.psd
-  artifactKey: Guid(44bda006a2b4677409f90820f06d5bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Black Rain Texture Pack/Brick/Brick01.psd using Guid(44bda006a2b4677409f90820f06d5bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaec0ef58fb29985b267fd4c4409b121') in 0.020027 seconds 
-  Import took 0.023226 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.366244 seconds.
-  path: Assets/ExampleAssets/Textures/Wood/Plywood_Albedo.tif
-  artifactKey: Guid(9644eb6aca67672449e2bcbb0eab8e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets/Textures/Wood/Plywood_Albedo.tif using Guid(9644eb6aca67672449e2bcbb0eab8e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64da908a8818a12db5841fe32ff7b2fa') in 0.015753 seconds 
-  Import took 0.019115 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.391126 seconds.
-  path: Assets/Objects
-  artifactKey: Guid(39bf49c8761201a4fbd1a907019c8b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects using Guid(39bf49c8761201a4fbd1a907019c8b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be93361707dd8967e49ba3ea3690f4c4') in 0.008466 seconds 
-  Import took 0.013164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.900579 seconds.
-  path: Assets/3d models
-  artifactKey: Guid(1ef529f2c8028cf40910c131f3ead0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3d models using Guid(1ef529f2c8028cf40910c131f3ead0e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a85d0a3b9af339f21319e2e70fe1ed14') in 0.011352 seconds 
-  Import took 0.014424 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.500847 seconds.
-  path: Assets/AllSkyFree
-  artifactKey: Guid(f37be0254a729c94399dd8ded59dd265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AllSkyFree using Guid(f37be0254a729c94399dd8ded59dd265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddec8f76b98b72682bca5a65875b951d') in 0.005344 seconds 
-  Import took 0.014533 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.856232 seconds.
-  path: Assets/ExampleAssets
-  artifactKey: Guid(1c668d0af4968c5489227ae33711624a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExampleAssets using Guid(1c668d0af4968c5489227ae33711624a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1718f5ec6b41994f511f58ac01e7b97c') in 0.006914 seconds 
-  Import took 0.010202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.945443 seconds.
-  path: Assets/Materials
-  artifactKey: Guid(b62229b1e1b54fc4e856bf79992c69ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials using Guid(b62229b1e1b54fc4e856bf79992c69ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b797ef395b2109bfd429f4c4a4ee0fef') in 0.008566 seconds 
-  Import took 0.018158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.470200 seconds.
-  path: Assets/ReadValue.cs
-  artifactKey: Guid(13bc2272530cc5d449fffba2cdd19932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ReadValue.cs using Guid(13bc2272530cc5d449fffba2cdd19932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ed00dbd6c9a1763f9ce77a72368981') in 0.021325 seconds 
-  Import took 0.025733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.334462 seconds.
-  path: Assets/Objects/Hand.prefab
-  artifactKey: Guid(bc1d87bd860270943a4d694cb17e2ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Hand.prefab using Guid(bc1d87bd860270943a4d694cb17e2ba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c37a163067cca690dbc5177a346d8e3') in 0.011756 seconds 
-  Import took 0.016141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.143770 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(412dd0e4f3abd5946981cc5269529e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(412dd0e4f3abd5946981cc5269529e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421e446b13b3cfc1993da5c73f011e4a') in 0.006197 seconds 
-  Import took 0.009442 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003126 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001D826AF3030 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D828784940 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826AAF810 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826B65B00 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82205EE50 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8269CBFB0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82688CE50 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8285F4650 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826D48040 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8286DCE10 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826AAF810 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D821A6A010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8269BDBA0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D822385010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826B36550 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82BEA63F0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826F1DBC0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8239DF080 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826AF12E0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826741CC0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Management.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826B65B00 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8266338C0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D825734010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D823DAA310 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82691BF30 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Oculus.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004e] in <49bec7d900ab46689d83f3113d84f058>:0 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in <49bec7d900ab46689d83f3113d84f058>:0 
-  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <5ad584e208e14caaa9e6b2e6027e9204>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.807 seconds
-Domain Reload Profiling:
-	ReloadAssembly (807ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (666ms)
-			LoadAssemblies (70ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (202ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (294ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (209ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 1929 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 130.1 MB.
-System memory in use after: 130.2 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2471.
-Total: 3.105100 ms (FindLiveObjects: 0.238700 ms CreateObjectMapping: 0.048200 ms MarkObjects: 2.790800 ms  DeleteObjects: 0.026200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 176.000362 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Script/TakeScreenshot.cs
-  artifactKey: Guid(3ed4c34c2363a3d459062dc28935ca2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Script/TakeScreenshot.cs using Guid(3ed4c34c2363a3d459062dc28935ca2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cede7c39ca1edaeb48e25fddf09f3db') in 0.008119 seconds 
-  Import took 0.011523 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.257494 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/BlurOptimized.cs
-  artifactKey: Guid(7fc6bde01469c7b4badee5362f191d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/BlurOptimized.cs using Guid(7fc6bde01469c7b4badee5362f191d96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bee5700ddca775bdd57c027ae5b8ffd') in 0.005137 seconds 
-  Import took 0.007842 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.272303 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/CameraMotionBlur.cs
-  artifactKey: Guid(97e9b95cf609d96409b6c40519432957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/CameraMotionBlur.cs using Guid(97e9b95cf609d96409b6c40519432957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9025972cd0010b234bdad9b91d25f6') in 0.005121 seconds 
-  Import took 0.007936 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.311074 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionLookup.cs
-  artifactKey: Guid(8cde8c0fd649d9b46bb403ba5e157391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionLookup.cs using Guid(8cde8c0fd649d9b46bb403ba5e157391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a562dd41dce4215123e61bfc5b17f92b') in 0.005253 seconds 
-  Import took 0.008022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.929049 seconds.
-  path: Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/personal/actionTreeBackgroundWithoutBorder.png
-  artifactKey: Guid(cf632ed80bf1f46c980de6b1b8b903ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/personal/actionTreeBackgroundWithoutBorder.png using Guid(cf632ed80bf1f46c980de6b1b8b903ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41ea57829c304ba6f09a507c0849984') in 0.030712 seconds 
-  Import took 0.033510 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/pro/actionTreeBackgroundWithoutBorder.png
-  artifactKey: Guid(943deaaee9c9347e0a455aa208526c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.inputsystem/InputSystem/Editor/AssetEditor/Resources/pro/actionTreeBackgroundWithoutBorder.png using Guid(943deaaee9c9347e0a455aa208526c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc153bdddaf95efd01942a39cdf29ae') in 0.011380 seconds 
-  Import took 0.014226 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.423106 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs
-  artifactKey: Guid(83d8db0ec466c14429f58c68c16398a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs using Guid(83d8db0ec466c14429f58c68c16398a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9aad248b22706f6d0a5267bc2a02fa') in 0.005157 seconds 
-  Import took 0.008062 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.455427 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/DepthOfField.cs
-  artifactKey: Guid(bd70d448b18cfbc46af26466f752332c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Standard Assets/Effects/ImageEffects/Scripts/DepthOfField.cs using Guid(bd70d448b18cfbc46af26466f752332c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca34bc313667696db1e5c3c8e34de413') in 0.005033 seconds 
-  Import took 0.008034 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.726069 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Mode/Scene.fbx
-  artifactKey: Guid(1e4b37dee538fa643a1b61b19e1ff33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Mode/Scene.fbx using Guid(1e4b37dee538fa643a1b61b19e1ff33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3723b4cb063dd73ecbc50cb3a8d055') in 0.248518 seconds 
-  Import took 0.252022 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003022 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001D826AF3030 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D828B04030 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D828354BF0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD5000A0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82BD7F0C0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8223A9010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8251BD010 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8285F4650 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82833B0F0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82906FC60 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826E0E6D0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D825040080 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD8D3E70 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D825CF12E0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82211F020 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82BEA58E0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D825AB4030 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826BE2FD0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D8220B6030 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82BFBD180 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Management.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D9FD5000A0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826630880 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D82BD7F0C0 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Interaction.Toolkit.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D826ABDC10 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D829164F90 doesn't match image C:\Users\lifeu\OneDrive\Documents\GitHub\VarScent\Reverse Alzheimers\Library\ScriptAssemblies\Unity.XR.Oculus.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0004e] in <49bec7d900ab46689d83f3113d84f058>:0 
-  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in <49bec7d900ab46689d83f3113d84f058>:0 
-  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <5ad584e208e14caaa9e6b2e6027e9204>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.739 seconds
-Domain Reload Profiling:
-	ReloadAssembly (739ms)
-		BeginReloadAssembly (81ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (614ms)
-			LoadAssemblies (62ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (178ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (275ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (56ms)
-				ProcessInitializeOnLoadAttributes (199ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.57 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
-Unloading 1929 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 130.2 MB.
-System memory in use after: 130.3 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2476.
-Total: 2.717100 ms (FindLiveObjects: 0.205000 ms CreateObjectMapping: 0.048200 ms MarkObjects: 2.448100 ms  DeleteObjects: 0.014600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 9.427261 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Mode
-  artifactKey: Guid(8c536657a9e1f5a4f90c1c8db2c9ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Mode using Guid(8c536657a9e1f5a4f90c1c8db2c9ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8079261f623c5b82890ec6b83acc3371') in 0.007793 seconds 
-  Import took 0.010729 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002395 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Mode
-  artifactKey: Guid(8c536657a9e1f5a4f90c1c8db2c9ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Mode using Guid(8c536657a9e1f5a4f90c1c8db2c9ec80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8079261f623c5b82890ec6b83acc3371') in 0.001737 seconds 
-  Import took 0.004550 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.640111 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Banana_tree.prefab
-  artifactKey: Guid(436b0840ee3788c4688414f3004c2020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Banana_tree.prefab using Guid(436b0840ee3788c4688414f3004c2020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d680879a762fdffd4f7a08cd9758d5c') in 0.043381 seconds 
-  Import took 0.046310 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_D1.prefab
-  artifactKey: Guid(9028c6d3dae15174c84dfed16664394d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_D1.prefab using Guid(9028c6d3dae15174c84dfed16664394d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4db9fb7045921a43eb4d2b700e392df') in 0.016568 seconds 
-  Import took 0.019222 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_B.prefab
-  artifactKey: Guid(c1ae69b6ddf5a2d4aa720f44351fd752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_B.prefab using Guid(c1ae69b6ddf5a2d4aa720f44351fd752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11241b809a9b56a4980ac9ed27342283') in 0.016060 seconds 
-  Import took 0.019216 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Coconut_tree.prefab
-  artifactKey: Guid(e654d60c310b3b742b6553f2d143f954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Coconut_tree.prefab using Guid(e654d60c310b3b742b6553f2d143f954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f7763ebe0746f85e4aa331ea3a6331') in 0.014174 seconds 
-  Import took 0.017672 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_E.prefab
-  artifactKey: Guid(ae702dbbc5eb1b54a9b160c2c1200fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_E.prefab using Guid(ae702dbbc5eb1b54a9b160c2c1200fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31acd28b8744162c363260227d48cfec') in 0.012269 seconds 
-  Import took 0.015565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Coconut_tree.prefab
-  artifactKey: Guid(e654d60c310b3b742b6553f2d143f954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Coconut_tree.prefab using Guid(e654d60c310b3b742b6553f2d143f954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f7763ebe0746f85e4aa331ea3a6331') in 0.008048 seconds 
-  Import took 0.011612 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Birch_A.prefab
-  artifactKey: Guid(91225e7c25f3ed544ac01365ceb0c74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Birch_A.prefab using Guid(91225e7c25f3ed544ac01365ceb0c74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c5a05f7ab3a952c30d7cd92faf87db') in 0.013773 seconds 
-  Import took 0.016687 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Birch_B.prefab
-  artifactKey: Guid(d97acbaf5f9f1df498a6f70e7db3a000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Birch_B.prefab using Guid(d97acbaf5f9f1df498a6f70e7db3a000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d59687e27d36b103d5fe1823c606c5d') in 0.012961 seconds 
-  Import took 0.015744 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Broad_leaved_trees_B.prefab
-  artifactKey: Guid(bd75143237aca994fa425659fddaffd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Broad_leaved_trees_B.prefab using Guid(bd75143237aca994fa425659fddaffd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63825256530c9c837b2186227f947e99') in 0.012205 seconds 
-  Import took 0.015864 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Cactus_A.prefab
-  artifactKey: Guid(25b7310f6077068478cd7e4defadc440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Cactus_A.prefab using Guid(25b7310f6077068478cd7e4defadc440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a800095a3c92756259432f38ce6d28c4') in 0.013418 seconds 
-  Import took 0.016478 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Bush_B.prefab
-  artifactKey: Guid(32f52989247f79d4eb2ef81c3abfab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Bush_B.prefab using Guid(32f52989247f79d4eb2ef81c3abfab63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e6ee21ef0eaa005c3a9cf42128d7f5') in 0.013941 seconds 
-  Import took 0.016708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_B1.prefab
-  artifactKey: Guid(da3bd4e34a778f94484ea34a86adcc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_B1.prefab using Guid(da3bd4e34a778f94484ea34a86adcc6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b8363d29112f18d8cb83e2277dceb0') in 0.011318 seconds 
-  Import took 0.014511 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_D1.prefab
-  artifactKey: Guid(579b282b7466ab944a2cab9416c4c47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_D1.prefab using Guid(579b282b7466ab944a2cab9416c4c47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d68ff2ce0bad1af887f671a1399024') in 0.013587 seconds 
-  Import took 0.016747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Broad_leaved_trees_C.prefab
-  artifactKey: Guid(6d017ef7b425061488e6627106852aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Broad_leaved_trees_C.prefab using Guid(6d017ef7b425061488e6627106852aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53bfd0cf8cc062e1dfa76e54dbdc98a0') in 0.014152 seconds 
-  Import took 0.017667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_A1.prefab
-  artifactKey: Guid(bb7bfe25a83799a46b870de2eb3a5bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_A1.prefab using Guid(bb7bfe25a83799a46b870de2eb3a5bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b333ad1c05fc9160422a5ecd87b47177') in 0.015792 seconds 
-  Import took 0.019352 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000153 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Bush_A.prefab
-  artifactKey: Guid(b39fc7070a1ee5543a8c26826ed7d0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Bush_A.prefab using Guid(b39fc7070a1ee5543a8c26826ed7d0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb64d10adfabb5b5f94d49e4535f3cf2') in 0.013095 seconds 
-  Import took 0.016199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Fortress.prefab
-  artifactKey: Guid(3b5b1a234fb1d3d43b223c202452bfe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Fortress.prefab using Guid(3b5b1a234fb1d3d43b223c202452bfe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b07fcac4c84a33598dc4c76adad81d') in 0.013140 seconds 
-  Import took 0.016157 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_B.prefab
-  artifactKey: Guid(fa86f9693cbb5ec42a8b4c540096bcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_B.prefab using Guid(fa86f9693cbb5ec42a8b4c540096bcb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a6f5891c2198b4e689af341f86fe5f6') in 0.011095 seconds 
-  Import took 0.014175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_B1.prefab
-  artifactKey: Guid(c5f67e26940aab544846a8a044e565fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_B1.prefab using Guid(c5f67e26940aab544846a8a044e565fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26aaa7e729fa0cb97148ea2d0d681bf5') in 0.012015 seconds 
-  Import took 0.015569 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_A1.prefab
-  artifactKey: Guid(fc5e25467417e574889455472c78b987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_A1.prefab using Guid(fc5e25467417e574889455472c78b987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c6eeed003a1c52997175ef2d7bb75b') in 0.013191 seconds 
-  Import took 0.016539 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Bush_C.prefab
-  artifactKey: Guid(685de8e0baeb4f145bc3cbaf7851f218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Bush_C.prefab using Guid(685de8e0baeb4f145bc3cbaf7851f218) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7852670785e92a7d7f0eec32c7c2422') in 0.013113 seconds 
-  Import took 0.016380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_C.prefab
-  artifactKey: Guid(2042aa66629cc8647859d637c04ed63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_C.prefab using Guid(2042aa66629cc8647859d637c04ed63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3236d2812b63402137fcf9c9a2ab47a8') in 0.011925 seconds 
-  Import took 0.015163 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Cactus_C.prefab
-  artifactKey: Guid(dfc274fbae6ef6d4d8854f32c682bff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Cactus_C.prefab using Guid(dfc274fbae6ef6d4d8854f32c682bff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8583a08cfb1d5f031991411246632496') in 0.012312 seconds 
-  Import took 0.015877 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_E1.prefab
-  artifactKey: Guid(31f1a4f383189334ba469468a13bae81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_E1.prefab using Guid(31f1a4f383189334ba469468a13bae81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c11e72c0f1b52cdc6bec4ab121baa909') in 0.012198 seconds 
-  Import took 0.015257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_C1.prefab
-  artifactKey: Guid(0960fc365893a7349ac4ade9d9ac703e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_C1.prefab using Guid(0960fc365893a7349ac4ade9d9ac703e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f29ad71c821bf2b7dd14f13905a945') in 0.014957 seconds 
-  Import took 0.018401 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Cactus_B.prefab
-  artifactKey: Guid(ce2edcf8e844ea74592c4f1822aa7183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Cactus_B.prefab using Guid(ce2edcf8e844ea74592c4f1822aa7183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '220dac921b365d037efd1cc4e4b64eb3') in 0.014916 seconds 
-  Import took 0.017976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Cactus_D.prefab
-  artifactKey: Guid(31dd104a271d83040993424dbcc17d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Cactus_D.prefab using Guid(31dd104a271d83040993424dbcc17d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edca55453c3b4d8f436ce566f76b4f36') in 0.012894 seconds 
-  Import took 0.015889 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_A.prefab
-  artifactKey: Guid(488b698cdd1e04049b8f5ab1872f6804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_A.prefab using Guid(488b698cdd1e04049b8f5ab1872f6804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041c96a7d3737b55bee33f140e568bac') in 0.013193 seconds 
-  Import took 0.016086 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_E1.prefab
-  artifactKey: Guid(c9406e53476440a4a909b7ad02361056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_E1.prefab using Guid(c9406e53476440a4a909b7ad02361056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31df18c038e41c3b99a464ff5b69caf3') in 0.012150 seconds 
-  Import took 0.015658 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Broad_leaved_trees_A.prefab
-  artifactKey: Guid(d4681fb6567f3274cba67d747e726c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Broad_leaved_trees_A.prefab using Guid(d4681fb6567f3274cba67d747e726c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc789698d8d0ee247b6d92ee180687b1') in 0.011820 seconds 
-  Import took 0.015426 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Birch_C.prefab
-  artifactKey: Guid(e10760ef90f7a844ca51905a5941fbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Birch_C.prefab using Guid(e10760ef90f7a844ca51905a5941fbb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23306eccd14044b1b68f73db2f4796e8') in 0.011470 seconds 
-  Import took 0.014525 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_E.prefab
-  artifactKey: Guid(07a2cd946a042164d957db2a04c75679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_E.prefab using Guid(07a2cd946a042164d957db2a04c75679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3aa6e79f5789370529555265b88738') in 0.011976 seconds 
-  Import took 0.014990 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_A.prefab
-  artifactKey: Guid(b714d540d3161624588abacf2513720e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_A.prefab using Guid(b714d540d3161624588abacf2513720e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607cfed233124c969ca7171fcb01d033') in 0.011616 seconds 
-  Import took 0.014519 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Gate.prefab
-  artifactKey: Guid(99035acfe15443a4697c6f7fe189c349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Gate.prefab using Guid(99035acfe15443a4697c6f7fe189c349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54aa6d2ae7ca39821e885be3ea498771') in 0.011434 seconds 
-  Import took 0.014090 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_D.prefab
-  artifactKey: Guid(b203583ed357d5a4b948511579bc45b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_D.prefab using Guid(b203583ed357d5a4b948511579bc45b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73bf90aa26c2eafd51dbb67955a3b805') in 0.012642 seconds 
-  Import took 0.015864 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_D.prefab
-  artifactKey: Guid(4f27c8e2434f73641a99ae7bf1329cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_D.prefab using Guid(4f27c8e2434f73641a99ae7bf1329cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c4c281e6532249c45f5e10d94683f4') in 0.012930 seconds 
-  Import took 0.016022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Land_C.prefab
-  artifactKey: Guid(b52549c98df120c4ab8c81995c77743f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Land_C.prefab using Guid(b52549c98df120c4ab8c81995c77743f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7ed637ba648afd35edaa77aee1f60b5') in 0.013138 seconds 
-  Import took 0.016125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_C1.prefab
-  artifactKey: Guid(f62854c09c7fcdf4c84c7f3335b749c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Hill_C1.prefab using Guid(f62854c09c7fcdf4c84c7f3335b749c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04894190a92827700bbe8508ebf9539') in 0.012797 seconds 
-  Import took 0.016249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.314783 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Palm_tree.prefab
-  artifactKey: Guid(23e53c37a90056a4aa469111e823e44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Palm_tree.prefab using Guid(23e53c37a90056a4aa469111e823e44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c144e448b8273fc6240af7ab0b904051') in 0.011245 seconds 
-  Import took 0.014200 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Temple.prefab
-  artifactKey: Guid(5428a2fd56973ef47a63b64ef03e085f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Temple.prefab using Guid(5428a2fd56973ef47a63b64ef03e085f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb524cfc09c1161f63f22321141e0b6') in 0.012014 seconds 
-  Import took 0.014604 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Spruce_B.prefab
-  artifactKey: Guid(5f92d876d5154c942a3e901c82f9549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Spruce_B.prefab using Guid(5f92d876d5154c942a3e901c82f9549c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6414a9ba73c281bd781ed036f1ea48e6') in 0.016602 seconds 
-  Import took 0.019529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Spruce_A.prefab
-  artifactKey: Guid(94244dc2afd56d2419c6874cc0c2e4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Spruce_A.prefab using Guid(94244dc2afd56d2419c6874cc0c2e4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0adae309730673c0f892c3539eeb3e2') in 0.012415 seconds 
-  Import took 0.015255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Platform.prefab
-  artifactKey: Guid(eac978d031f5a784aaa00774bed5ec1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Platform.prefab using Guid(eac978d031f5a784aaa00774bed5ec1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0043a73c1e79f4bc27f68d95eb9be17') in 0.012711 seconds 
-  Import took 0.015707 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000145 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Spruce_C.prefab
-  artifactKey: Guid(e9afe91546f721f4c9d392f065439d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Spruce_C.prefab using Guid(e9afe91546f721f4c9d392f065439d72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8de8563b33193ee066275e74e47551e') in 0.012215 seconds 
-  Import took 0.015452 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Prefab/Tower.prefab
-  artifactKey: Guid(d0449870edb2e0b45b48a0c6c90f19ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Prefab/Tower.prefab using Guid(d0449870edb2e0b45b48a0c6c90f19ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80d2d04ccd22dabb384a69a9a1a7764b') in 0.012443 seconds 
-  Import took 0.015659 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 371.120877 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Styles/ChangesTabPageView.uss
-  artifactKey: Guid(105b0e05b7ff8d147ad5c7aeed41e3b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Styles/ChangesTabPageView.uss using Guid(105b0e05b7ff8d147ad5c7aeed41e3b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf0f3768e372c0ca37c69b3c6d6ccd61') in 0.010890 seconds 
-  Import took 0.014108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Layouts/ChangesTabPageView.uxml
-  artifactKey: Guid(a1c552fb05993cf4eac00d572aa408f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Layouts/ChangesTabPageView.uxml using Guid(a1c552fb05993cf4eac00d572aa408f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a5826af264ce7e740957813ef56f732') in 0.007170 seconds 
-  Import took 0.009695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Layouts/HistoryTabPageView.uxml
-  artifactKey: Guid(fdeda3b2ca86b6542a303cbe4f00c3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/Collaborate/Assets/Layouts/HistoryTabPageView.uxml using Guid(fdeda3b2ca86b6542a303cbe4f00c3c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb343b136a592bc42dc9ce663f57222b') in 0.006227 seconds 
-  Import took 0.008904 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 92.877696 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Texture/Hill_A.png
-  artifactKey: Guid(20599d0a169e0d94d9d8a07baa3bd114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Texture/Hill_A.png using Guid(20599d0a169e0d94d9d8a07baa3bd114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8459f478e31212fe1f1da0bc96245f0') in 0.012926 seconds 
-  Import took 0.015829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Texture/Land_A.png
-  artifactKey: Guid(82c8d13a54478f6428a9748711dd64a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Texture/Land_A.png using Guid(82c8d13a54478f6428a9748711dd64a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd982e850861550f9c78cefeda6fcc7c2') in 0.007919 seconds 
-  Import took 0.010667 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Texture/Hill_B.png
-  artifactKey: Guid(5442223793ea16f479968edbb478c03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Texture/Hill_B.png using Guid(5442223793ea16f479968edbb478c03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bb9e3fe3a29b5206276e7caec35d24c') in 0.011347 seconds 
-  Import took 0.014388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Texture/Land_B.png
-  artifactKey: Guid(0bdd5c7367433254a815581eebc3033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Texture/Land_B.png using Guid(0bdd5c7367433254a815581eebc3033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d2c74a653f954e8541f3faf1aabe52') in 0.009170 seconds 
-  Import took 0.012084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.006351 seconds.
-  path: Assets/POLY STYLE - Vegetation Pack/Texture/Land_B.png
-  artifactKey: Guid(0bdd5c7367433254a815581eebc3033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/POLY STYLE - Vegetation Pack/Texture/Land_B.png using Guid(0bdd5c7367433254a815581eebc3033b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d2c74a653f954e8541f3faf1aabe52') in 0.006777 seconds 
-  Import took 0.009994 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 66.787884 seconds.
-  path: Assets/Scripts/VRMovementController.cs
-  artifactKey: Guid(6e8452c631d5a3e428cf30289bc09b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/VRMovementController.cs using Guid(6e8452c631d5a3e428cf30289bc09b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f1c6061cd1a23780ba52dbb6a1c34b') in 0.005013 seconds 
-  Import took 0.007953 seconds .
-
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
