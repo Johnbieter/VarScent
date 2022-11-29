@@ -27,11 +27,9 @@ public class RaycastController : MonoBehaviour
     void Update()
     {
 
+        targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
         
-
-        targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float primaryButtonValue);
-        
-        if (primaryButtonValue > 0.1f)
+        if (primaryButtonValue == true)
         {
             Debug.Log("Trigger pressed");
             RaycastHit hit;
@@ -43,6 +41,8 @@ public class RaycastController : MonoBehaviour
                 if (hit.transform.tag == "Changed")
                 {
                     Debug.Log("Found object");
+
+                    
                 }
                 else
                 {
