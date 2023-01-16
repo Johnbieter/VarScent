@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private float currentTime = 10;
@@ -13,17 +13,36 @@ public class GameController : MonoBehaviour
 
     [SerializeField] Transform spawnpoint;
 
+    [SerializeField] private float timeToTeleport;
+
+
+    private bool timerFinished = false;
+
+    public UnityEvent onTimerFinished;
+    public UnityEvent onTestStart;
+
     private void FixedUpdate()
     {
-        if (currentTime <= 0)
+        if (!timerFinished)
         {
-            player.transform.position = spawnpoint.position;
+            if (currentTime <= 0)
+            {
+                onTimerFinished.Invoke();
+                Invoke("MoveToTest", timeToTeleport);
+                timerFinished = true;
+            }
+            else
+            {
+                currentTime -= Time.deltaTime;
+            }
         }
-        else
-        {
-            currentTime -= Time.deltaTime;
-        }
-
         timer.text = currentTime.ToString();
     }
+
+    public void MoveToTest()
+    {
+        player.transform.position = spawnpoint.position;
+        onTestStart.Invoke();
+    }
+
 }
