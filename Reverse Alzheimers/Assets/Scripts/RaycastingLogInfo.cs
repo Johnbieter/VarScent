@@ -7,11 +7,15 @@ public class RaycastingLogInfo : MonoBehaviour
 
     public List<GameObject> objectsToLog;
     public List<bool> objectSpotted;
-    public float timeOnWrong;
+    
 
+    [Header("Set Correct Object")]
     public int correctObject;
+
+    [Header("Interim Data")]
     public float timeToCorrectObject;
     public float timeOnCorrectObject;
+    public float timeOnWrong;
     public bool correctObjectFound = false;
     public float time;
     void Start()

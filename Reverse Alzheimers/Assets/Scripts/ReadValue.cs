@@ -13,7 +13,7 @@ public class ReadValue : MonoBehaviour
 
     //public string portName = "COM5";
     //public int baudRate = 9600;
-    SerialPort port = new SerialPort("COM5", 9600);
+    SerialPort port = new SerialPort("COM9", 9600);
 
 
     // Start is called before the first frame update
@@ -29,36 +29,24 @@ public class ReadValue : MonoBehaviour
             port.Write("R");
             //port.Write("5");
         }
-        else
-        {
-            port.Write("0");
-        }
+      
 
         if (yellowLedIsOn == true)
         {
-            port.Write("2");
+            port.Write("E");
         }
-        else
-        {
-            port.Write("0");
-        }
+      
 
         if (blueLedIsOn == true)
         {
             port.Write("5");
         }
-        else
-        {
-            port.Write("0");
-        }
+       
 
         if (greenLedIsOn == true)
         {
             port.Write("15");
         }
-        else
-        {
-            port.Write("0");
-        }
+        
     }
 }
