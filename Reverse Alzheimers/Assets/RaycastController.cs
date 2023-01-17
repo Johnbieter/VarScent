@@ -9,6 +9,8 @@ public class RaycastController : MonoBehaviour
     private InputDevice targetDevice;
 
     public Transform leftHandControllerPos;
+
+    [SerializeField] Material onSelectMaterial;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,11 +40,10 @@ public class RaycastController : MonoBehaviour
             {
                 // Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.red);
 
-                if (hit.transform.tag == "Changed")
+                if (hit.transform.tag == "Selectable")
                 {
-                    Debug.Log("Found object");
-
-                    
+                    //Debug.Log("Select material");
+                    //hit.transform.gameObject.GetComponent<MeshRenderer>().material = onSelectMaterial;
                 }
                 else
                 {

@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour
     public UnityEvent onTimerFinished;
     public UnityEvent onTestStart;
 
+    public List<GameObject> correctSelected;
+    public List<GameObject> incorrectSelected;
     private void FixedUpdate()
     {
         if (!timerFinished)
