@@ -6,10 +6,7 @@ public class Selectable : MonoBehaviour
 {
     public bool correct;
     public bool selected = false;
+    public float timeLookedAt;
     public Material originalMaterial;
 
-    private void Update()
-    {
-       
-    }
 }
