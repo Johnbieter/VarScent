@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/VARScent/_Levels/MenuStart.unity
+    guid: ab7c484559568d84e8ef4dcbb937812c
+  - enabled: 1
+    path: Assets/VARScent/_Levels/DiagnosticTestScene.unity
+    guid: 23cb7817d19638c47ba8565fcdfef6fa
+  - enabled: 1
+    path: Assets/VARScent/_Levels/TherapyTestScene.unity
+    guid: 73841a8af423164449ef2bb2b2e92fa4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 815bbfa634f08fe41a0171492bc09b3a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a3414461c3e125c4c9b59e4bda1b9f99, type: 2}
