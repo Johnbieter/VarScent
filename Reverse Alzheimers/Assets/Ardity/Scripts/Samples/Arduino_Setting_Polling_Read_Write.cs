@@ -15,23 +15,21 @@ using System.Collections;
 public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
 {
     public SerialController serialController;
-    enum Scents { Pine, Citrus, Peanut_Butter, Lavender };
+    public enum Scents { Pine, Citrus, Peanut_Butter, Lavender };
 
-    [SerializeField] Scents ScentOne;
-    [SerializeField] Scents ScentTwo;
-    [SerializeField] Scents ScentThree;
-    [SerializeField] Scents ScentFour;
 
-    [SerializeField] Scents AtomizerOneContents;
-    [SerializeField] Scents AtomizerTwoContents;
-    [SerializeField] Scents AtomizerThreeContnets;
-    [SerializeField] Scents AtomizerFourContents;
+    public Scents AtomizerOneContents;
+    public Scents AtomizerTwoContents;
+    public Scents AtomizerThreeContnets;
+    public Scents AtomizerFourContents;
+
+    public Scents[] atomizerContents = new Scents[4];
 
     //Timer
     public float scentTime = 60.0f;
     public float breakTime = 5.0f;
 
-    private int currentScent = 1;
+    public int currentScent = 1;
     private bool firstAtomizerOn = false;
     private bool secondAtomizerOn = false;
     private bool thirdAtomizerOn = false;
@@ -47,18 +45,21 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
         scentTimer = scentTime;
         breakTimer = breakTime;
-        PopulateOrderArray();
-        currentScent = atomizerOrder[currentTest];
+
+        atomizerContents[0] = AtomizerOneContents;
+        atomizerContents[1] = AtomizerTwoContents;
+        atomizerContents[2] = AtomizerThreeContnets;
+        atomizerContents[3] = AtomizerFourContents;
     }
 
     // Executed each frame
     void Update()
     {
-        if(currentTest < 4) // Becase there are only 4 scents and we dont need the timer to keep running afer that
+        if (currentTest < 4) // Becase there are only 4 scents and we dont need the timer to keep running afer that
         {
-        RunTest();
-        scentTimer -= Time.deltaTime;
-        if(scentTimer < 0) breakTimer -= Time.deltaTime; //run break timer when scent timer is up
+            RunTest();
+            scentTimer -= Time.deltaTime;
+            if (scentTimer < 0) breakTimer -= Time.deltaTime; //run break timer when scent timer is up
         }
         //---------------------------------------------------------------------
         // Receive data
@@ -78,17 +79,18 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
             Debug.Log("Message arrived: " + message);
     }
 
-    private void RunTest()
+    public void RunTest()
     {
         if (currentScent == 1)
         {
-            if (scentTimer > 0)ToggleFirstAtomizer(true);
+            if (scentTimer > 0) ToggleFirstAtomizer(true);
             else
             {
                 ToggleFirstAtomizer(false);
                 if (breakTimer < 0) ResetTimes();  //Wait for break to be up before continuing onto next scent
             }
-        }else if(currentScent == 2)
+        }
+        else if (currentScent == 2)
         {
             if (scentTimer > 0) ToggleSecondAtomizer(true);
             else
@@ -96,7 +98,8 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
                 ToggleSecondAtomizer(false);
                 if (breakTimer < 0) ResetTimes();   //Wait for break to be up before continuing onto next scent
             }
-        }else if (currentScent == 3)
+        }
+        else if (currentScent == 3)
         {
             if (scentTimer > 0) ToggleThirdAtomizer(true);
             else
@@ -104,7 +107,8 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
                 ToggleThirdAtomizer(false);
                 if (breakTimer < 0) ResetTimes();   //Wait for break to be up before continuing onto next scent
             }
-        }else if (currentScent == 4)
+        }
+        else if (currentScent == 4)
         {
             if (scentTimer > 0) ToggleFourthAtomizer(true);
             else
@@ -123,8 +127,8 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
         if (status == firstAtomizerOn) return;
         firstAtomizerOn = status;
 
-        if(status == true) serialController.SendSerialMessage("Q"); //Turn on the first atomizer
-        if(status == false) serialController.SendSerialMessage("A"); //Turn off the first atomizer
+        if (status == true) serialController.SendSerialMessage("Q"); //Turn on the first atomizer
+        if (status == false) serialController.SendSerialMessage("A"); //Turn off the first atomizer
 
         if (status == true) Debug.Log("First Atomizer On");
         else Debug.Log("First Atomizer off");
@@ -170,35 +174,6 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
     {
         scentTimer = scentTime;
         breakTimer = breakTime;
-        currentTest += 1;
-        if (currentTest > 3) return;
-        currentScent = atomizerOrder[currentTest];
-    }
 
-    private void PopulateOrderArray()
-    {
-        //Setting Scent One
-        if (ScentOne == AtomizerOneContents) atomizerOrder[0] = 1;
-        if (ScentOne == AtomizerTwoContents) atomizerOrder[0] = 2;
-        if (ScentOne == AtomizerThreeContnets) atomizerOrder[0] = 3;
-        if (ScentOne == AtomizerFourContents) atomizerOrder[0] = 4;
-
-        //Setting Scent Two
-        if (ScentTwo == AtomizerOneContents) atomizerOrder[1] = 1;
-        if (ScentTwo == AtomizerTwoContents) atomizerOrder[1] = 2;
-        if (ScentTwo == AtomizerThreeContnets) atomizerOrder[1] = 3;
-        if (ScentTwo == AtomizerFourContents) atomizerOrder[1] = 4;
-
-        //Setting Secnt Three
-        if (ScentThree == AtomizerOneContents) atomizerOrder[2] = 1;
-        if (ScentThree == AtomizerTwoContents) atomizerOrder[2] = 2;
-        if (ScentThree == AtomizerThreeContnets) atomizerOrder[2] = 3;
-        if (ScentThree == AtomizerFourContents) atomizerOrder[2] = 4;
-
-        //Setting Scent Four
-        if (ScentFour == AtomizerOneContents) atomizerOrder[3] = 1;
-        if (ScentFour == AtomizerTwoContents) atomizerOrder[3] = 2;
-        if (ScentFour == AtomizerThreeContnets) atomizerOrder[3] = 3;
-        if (ScentFour == AtomizerFourContents) atomizerOrder[3] = 4;
     }
 }
