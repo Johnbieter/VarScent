@@ -31,6 +31,7 @@ public class RaycastingLogInfo : MonoBehaviour
 
     void Update()
     {
+        return;
         time += Time.deltaTime;
         RaycastHit hit;
 

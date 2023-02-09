@@ -46,6 +46,8 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
         scentTimer = scentTime;
         breakTimer = breakTime;
 
+
+        
         atomizerContents[0] = AtomizerOneContents;
         atomizerContents[1] = AtomizerTwoContents;
         atomizerContents[2] = AtomizerThreeContnets;
