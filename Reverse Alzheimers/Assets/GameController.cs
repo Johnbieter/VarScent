@@ -35,8 +35,11 @@ public class GameController : MonoBehaviour
     public InputField rememberInput;
     public InputField testInput;
     public InputField fileNameInput;
+    public Toggle useAtomizer;
 
     [SerializeField] CompileMemoryTestData compileMemoryTest;
+    [SerializeField] Arduino_Setting_Polling_Read_Write arduinoSettings;
+
     private void FixedUpdate()
     {
 
@@ -84,6 +87,8 @@ public class GameController : MonoBehaviour
         timeToTest = float.Parse(testInput.text, CultureInfo.InvariantCulture.NumberFormat);
         compileMemoryTest = GetComponent<CompileMemoryTestData>();
         compileMemoryTest.filename = fileNameInput.text;
+
+        arduinoSettings.useAtomizer = useAtomizer;
     }
 
 }

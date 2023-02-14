@@ -39,15 +39,30 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
     private float breakTimer;
     private int[] atomizerOrder = new int[4]; //Array with the lenght of 4 because there are only 4 atomoizers
     private int currentTest = 0;                //Current test running, Starting at zero beacuase it is used to index the atomizerOrder array
+
+
+    public bool isMemoryTest;
+    public bool useAtomizer;
     // Initialization
     void Start()
     {
+
+        
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
+
+        
         scentTimer = scentTime;
         breakTimer = breakTime;
 
+        if (useAtomizer)
+        {
+            currentScent = 1;
+            RunTest();
+        }
 
-        
+        if (isMemoryTest) return;
+
+
         atomizerContents[0] = AtomizerOneContents;
         atomizerContents[1] = AtomizerTwoContents;
         atomizerContents[2] = AtomizerThreeContnets;
@@ -57,6 +72,11 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
     // Executed each frame
     void Update()
     {
+
+
+        
+
+
         if (currentTest < 4) // Becase there are only 4 scents and we dont need the timer to keep running afer that
         {
             RunTest();
@@ -83,6 +103,8 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
 
     public void RunTest()
     {
+
+        if (isMemoryTest) return;
         if (currentScent == 1)
         {
             if (scentTimer > 0) ToggleFirstAtomizer(true);

@@ -5250,14 +5250,8 @@ MonoBehaviour:
   correctSelected: []
   incorrectSelected: []
   objectList:
-  - {fileID: 983400918}
-  - {fileID: 430105479}
-  - {fileID: 410365371}
-  - {fileID: 2005506925}
-  - {fileID: 1767901810}
-  - {fileID: 1272023392}
-  - {fileID: 1365615367}
   - {fileID: 1884028907}
+  - {fileID: 773676697}
   - {fileID: 312497616}
   - {fileID: 1786359908}
   - {fileID: 1433094345}
@@ -5265,21 +5259,29 @@ MonoBehaviour:
   - {fileID: 226919272}
   - {fileID: 1573024680}
   - {fileID: 599824080}
-  - {fileID: 916535051}
   - {fileID: 682062597}
   - {fileID: 1347712022}
   - {fileID: 884410460}
   - {fileID: 19153845}
   - {fileID: 1166875618}
-  - {fileID: 773676697}
   - {fileID: 1352428275}
   - {fileID: 853959547}
   - {fileID: 532341523}
   - {fileID: 1826758487}
+  - {fileID: 983400918}
+  - {fileID: 430105479}
+  - {fileID: 410365371}
+  - {fileID: 2005506925}
+  - {fileID: 1767901810}
+  - {fileID: 1365615367}
+  - {fileID: 916535051}
+  - {fileID: 1272023392}
   rememberInput: {fileID: 8878869641100593925}
   testInput: {fileID: 54342228}
   fileNameInput: {fileID: 1427694767}
+  useAtomizer: {fileID: 0}
   compileMemoryTest: {fileID: 357272641}
+  arduinoSettings: {fileID: 467914057}
 --- !u!4 &357272640
 Transform:
   m_ObjectHideFlags: 0
@@ -6284,6 +6286,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a1ab17427c9f9504b892f25470deeb10, type: 3}
   m_PrefabInstance: {fileID: 459956076}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &467914056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: isMemoryTest
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: atomizerContents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869665988810876961, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_Name
+      value: 'Arduino '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0259018
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.7548995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.0767422
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035332673645238562, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+--- !u!114 &467914057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+  m_PrefabInstance: {fileID: 467914056}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff70c0cefddc044e964606a1dbe4d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &469945447
 PrefabInstance:
   m_ObjectHideFlags: 0
