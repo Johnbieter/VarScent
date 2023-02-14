@@ -66,6 +66,25 @@ public class HighlightObject : MonoBehaviour
 
                 if (rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
                 {
+
+                    if (hit.transform.gameObject.GetComponent<Selectable>())
+                    {
+                        Selectable hitSelect = hit.transform.gameObject.GetComponent<Selectable>();
+                        hitSelect.selected = !hitSelect.selected;
+                        if (hitSelect.selected)
+                        {
+                            hit.transform.gameObject.GetComponent<MeshRenderer>().material = onSelectMaterial;
+                            hit.transform.gameObject.tag = "Unselectable";
+                        }
+                        else
+                        {
+                            hit.transform.gameObject.GetComponent<MeshRenderer>().material = hitSelect.originalMaterial;
+                            hit.transform.gameObject.tag = "Selectable";
+                        }
+                      
+                    }
+
+                    /*
                         if (hit.transform.gameObject.tag == "Selectable")
                         {
                             Debug.Log("Object was a selectable");
@@ -73,13 +92,13 @@ public class HighlightObject : MonoBehaviour
                             {
                                 Debug.Log("add to mf list");
                                 hit.transform.gameObject.GetComponent<Selectable>().selected = true;
-                                gC.correctSelected.Add(hit.transform.gameObject);
+                                //gC.correctSelected.Add(hit.transform.gameObject);
                                 hit.transform.gameObject.GetComponent<MeshRenderer>().material = onSelectMaterial;
                                 hit.transform.gameObject.tag = "Unselectable";
                             }
                             else
                             {
-                                gC.incorrectSelected.Add(hit.transform.gameObject);
+                                //gC.incorrectSelected.Add(hit.transform.gameObject);
                                 hit.transform.gameObject.GetComponent<MeshRenderer>().material = onSelectMaterial;
                                 hit.transform.gameObject.tag = "Unselectable";
                             }
@@ -102,6 +121,7 @@ public class HighlightObject : MonoBehaviour
                                 hit.transform.tag = "Selectable";
                             }
                         }
+                    */
 
                 }
            }

@@ -30,6 +30,7 @@ public class GameController : MonoBehaviour
 
     public List<GameObject> correctSelected;
     public List<GameObject> incorrectSelected;
+    public List<GameObject> objectList;
 
     public InputField rememberInput;
     public InputField testInput;
