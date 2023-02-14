@@ -9,4 +9,19 @@ public class Selectable : MonoBehaviour
     public float timeLookedAt;
     public Material originalMaterial;
 
+    bool onHover;
+    public void SetBool(bool onhover)
+    {
+        onHover = onhover;
+    }
+
+    private void Update()
+    {
+        if (onHover)
+        {
+            timeLookedAt += Time.deltaTime;
+        }
+    }
+   
+
 }

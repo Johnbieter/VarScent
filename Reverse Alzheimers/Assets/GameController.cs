@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
+
 public class GameController : MonoBehaviour
 {
     [SerializeField] private float timeToRemember;
-
-    [SerializeField] private TMP_Text timer;
 
     [SerializeField] private GameObject player;
 
@@ -20,6 +21,7 @@ public class GameController : MonoBehaviour
     private bool testStarted;
     private bool testFinished;
     private bool timerFinished = false;
+    public bool startRemember = false;
     
 
     public UnityEvent onTimerFinished;
@@ -28,8 +30,20 @@ public class GameController : MonoBehaviour
 
     public List<GameObject> correctSelected;
     public List<GameObject> incorrectSelected;
+    public List<GameObject> objectList;
+
+    public InputField rememberInput;
+    public InputField testInput;
+    public InputField fileNameInput;
+    public Toggle useAtomizer;
+
+    [SerializeField] CompileMemoryTestData compileMemoryTest;
+    [SerializeField] Arduino_Setting_Polling_Read_Write arduinoSettings;
+
     private void FixedUpdate()
     {
+
+        if (!startRemember) return;
         if (!timerFinished)
         {
             if (timeToRemember <= 0)
@@ -43,7 +57,6 @@ public class GameController : MonoBehaviour
                 timeToRemember -= Time.deltaTime;
             }
         }
-        timer.text = timeToRemember.ToString();
         if (!testFinished)
         {
             if (testStarted)
@@ -66,6 +79,16 @@ public class GameController : MonoBehaviour
         player.transform.position = spawnpoint.position;
         onTestStart.Invoke();
         testStarted = true;
+    }
+    public void StartRemember()
+    {
+        startRemember = true;
+        timeToRemember = float.Parse(rememberInput.text, CultureInfo.InvariantCulture.NumberFormat);
+        timeToTest = float.Parse(testInput.text, CultureInfo.InvariantCulture.NumberFormat);
+        compileMemoryTest = GetComponent<CompileMemoryTestData>();
+        compileMemoryTest.filename = fileNameInput.text;
+
+        arduinoSettings.useAtomizer = useAtomizer;
     }
 
 }
