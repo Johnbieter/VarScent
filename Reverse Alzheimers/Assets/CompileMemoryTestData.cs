@@ -8,7 +8,7 @@ public class CompileMemoryTestData : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    [SerializeField] private string filename;
+    public string filename;
 
     [System.Serializable]
     public class MemoryData
@@ -63,7 +63,7 @@ public class CompileMemoryTestData : MonoBehaviour
     {
 
         TextWriter tw = new StreamWriter(Application.dataPath + "/" + filename + ".csv", false);
-        tw.WriteLine("Object Selected, Correct, Time Looked At");
+        tw.WriteLine("Object Selected, Correct, Time Hovered");
         tw.Close();
 
         if (memoryDataList.data.Count > 0)
