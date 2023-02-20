@@ -5279,7 +5279,7 @@ MonoBehaviour:
   rememberInput: {fileID: 8878869641100593925}
   testInput: {fileID: 54342228}
   fileNameInput: {fileID: 1427694767}
-  useAtomizer: {fileID: 0}
+  useAtomizer: {fileID: 405613203}
   compileMemoryTest: {fileID: 357272641}
   arduinoSettings: {fileID: 467914057}
 --- !u!4 &357272640
@@ -6293,12 +6293,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3054075884060524567, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: portName
+      value: COM7
+      objectReference: {fileID: 0}
     - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
       propertyPath: isMemoryTest
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
       propertyPath: atomizerContents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: atomizerContents.Array.data[0]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: atomizerContents.Array.data[1]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7869665988810876961, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}

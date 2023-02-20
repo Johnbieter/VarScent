@@ -88,7 +88,14 @@ public class GameController : MonoBehaviour
         compileMemoryTest = GetComponent<CompileMemoryTestData>();
         compileMemoryTest.filename = fileNameInput.text;
 
-        arduinoSettings.useAtomizer = useAtomizer;
+        arduinoSettings.useAtomizer = this.useAtomizer.isOn;
+
+        Debug.Log(useAtomizer.isOn);
+        if (useAtomizer.isOn)
+        {
+            arduinoSettings.RunTest();
+        }
+        
     }
 
 }
