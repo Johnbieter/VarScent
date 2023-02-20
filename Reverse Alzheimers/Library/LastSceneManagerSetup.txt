@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/VARScent/_Levels/TherapyTestScene.unity
+- path: Assets/VARScent/_Levels/DiagnosticTestScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

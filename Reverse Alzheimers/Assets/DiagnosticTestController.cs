@@ -24,11 +24,11 @@ public class DiagnosticTestController : MonoBehaviour
     public List<GameObject> instantiatedObjects = new List<GameObject>(0);
 
     
-    private int index = -1;
+    private int index;
 
     private void Start()
     {
-       
+        index = 0;
     }
 
 

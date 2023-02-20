@@ -718,6 +718,7 @@ m_PackageAssets:
         - 3.2.0-pre.3
         - 3.2.0-pre.4
         - 4.0.0-pre.1
+        - 4.0.0-pre.2
         compatible:
         - 3.0.6
         - 3.2.0-pre.1
@@ -1222,6 +1223,7 @@ m_PackageAssets:
         - 4.2.0
         - 4.2.1
         - 4.3.1
+        - 4.3.3
         compatible:
         - 4.0.1
         - 4.0.3
@@ -1234,6 +1236,7 @@ m_PackageAssets:
         - 4.2.0
         - 4.2.1
         - 4.3.1
+        - 4.3.3
         verified: 4.0.7
       dependencies:
       - name: com.unity.modules.subsystems
