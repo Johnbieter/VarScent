@@ -5,9 +5,9 @@ using UnityEngine;
 public class RaycastingLogInfo : MonoBehaviour
 {
 
-    public List<GameObject> objectsToLog;
+    public List<GameObject> objectsToLog = new List<GameObject>();
     public List<bool> objectSpotted;
-    
+
 
     [Header("Set Correct Object")]
     public int correctObject;
@@ -18,20 +18,19 @@ public class RaycastingLogInfo : MonoBehaviour
     public float timeOnWrong;
     public bool correctObjectFound = false;
     public float time;
+
+
+    public CSVWriter myWriter;
+
     void Start()
     {
-
-        for (var i = 0; i < objectsToLog.Count; i++)
-        {
-            objectSpotted.Add(false);
-        }
-       
+        myWriter = GetComponent<CSVWriter>();
     }
-    
 
-    void Update()
+
+
+    public void RecordTestInfo(GameObject correctObj, List<GameObject> incorrectObj)
     {
-        return;
         time += Time.deltaTime;
         RaycastHit hit;
 
@@ -41,36 +40,51 @@ public class RaycastingLogInfo : MonoBehaviour
 
             GameObject lookObject = hit.transform.gameObject;
 
-            for (var i = 0; i < objectsToLog.Count; i++)
+            if (lookObject.name == correctObj.name)
             {
-                if (lookObject.name == objectsToLog[i].name)
+                Debug.Log("Object found");
+
+                if (!correctObjectFound)
                 {
-                    Debug.Log("Object found");
+                    timeToCorrectObject = time;
+                    correctObjectFound = true;
+                }
+                if (correctObjectFound)
+                {
+                    timeOnCorrectObject += Time.deltaTime;
+                }
 
-                    if (i == correctObject)
-                    {
-                        if (!correctObjectFound)
-                        {
-                            timeToCorrectObject = time;
-                            correctObjectFound = true;
-                        }
-                        timeOnCorrectObject += Time.deltaTime;
 
-                    }
-                    else 
+            }
+            else
+            {
+                for (var i = 1; i < incorrectObj.Count; i++)
+                {
+                    if (lookObject.name == incorrectObj[i].name)
                     {
-                        if (!correctObjectFound)
-                        {
-                            objectSpotted[i] = true;
-                        }
                         timeOnWrong += Time.deltaTime;
                     }
                 }
             }
-            //Debug.Log("Object: " + hit.transform.gameObject.name + "Time:" + Time.time);
         }
+    }
+    public void ResetForNextTest()
+    {
+
+        //Resetting data
+        timeToCorrectObject = 0;
+
+        timeOnWrong = 0;
+        correctObjectFound = false;
+        time = 0;
+        timeOnCorrectObject = 0;
+
+
+    }
+    public void StoreData()
+    {
+        myWriter.CompileData();
     }
 
 
-    
 }
