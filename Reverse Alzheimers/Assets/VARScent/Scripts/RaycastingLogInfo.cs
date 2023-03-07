@@ -19,6 +19,8 @@ public class RaycastingLogInfo : MonoBehaviour
     public bool correctObjectFound = false;
     public float time;
 
+    [SerializeField] private string selectableTag = "Selectable";
+    private Transform _selection;
 
     public CSVWriter myWriter;
 
@@ -66,6 +68,26 @@ public class RaycastingLogInfo : MonoBehaviour
                     }
                 }
             }
+
+            if (_selection != null)
+            {
+                var selectionRenderer = _selection.GetComponent<DiagnosticSelectable>();
+                selectionRenderer.isSelected = false;
+                //selectionRenderer.material = defaultMaterial;
+                _selection = null;
+            }
+
+            var selection = hit.transform;
+            if (selection.CompareTag(selectableTag))
+            {
+                var selectionRenderer = selection.GetComponent<DiagnosticSelectable>();
+                if (selectionRenderer != null)
+                {
+                    selectionRenderer.isSelected = true;
+                }
+                _selection = selection;
+            }
+
         }
     }
     public void ResetForNextTest()
@@ -84,6 +106,12 @@ public class RaycastingLogInfo : MonoBehaviour
     public void StoreData()
     {
         myWriter.CompileData();
+    }
+
+    private void Update()
+    {
+      
+       
     }
 
 

@@ -91,24 +91,24 @@ public class DiagnosticTestController : MonoBehaviour
             if (value == 2)
             {
                 if (i == 0)
-                    atomizerControl.AtomizerOneContents = Arduino_Setting_Polling_Read_Write.Scents.Lavender;
+                    atomizerControl.AtomizerOneContents = Arduino_Setting_Polling_Read_Write.Scents.Rose;
                 if (i == 1)
-                    atomizerControl.AtomizerTwoContents = Arduino_Setting_Polling_Read_Write.Scents.Lavender;
+                    atomizerControl.AtomizerTwoContents = Arduino_Setting_Polling_Read_Write.Scents.Rose;
                 if (i == 2)
-                    atomizerControl.AtomizerThreeContnets = Arduino_Setting_Polling_Read_Write.Scents.Lavender;
+                    atomizerControl.AtomizerThreeContnets = Arduino_Setting_Polling_Read_Write.Scents.Rose;
                 if (i == 3)
-                    atomizerControl.AtomizerFourContents = Arduino_Setting_Polling_Read_Write.Scents.Lavender;
+                    atomizerControl.AtomizerFourContents = Arduino_Setting_Polling_Read_Write.Scents.Rose;
             }
             if (value == 3)
             {
                 if (i == 0)
-                    atomizerControl.AtomizerOneContents = Arduino_Setting_Polling_Read_Write.Scents.Peanut_Butter;
+                    atomizerControl.AtomizerOneContents = Arduino_Setting_Polling_Read_Write.Scents.Cinnamon;
                 if (i == 1)
-                    atomizerControl.AtomizerTwoContents = Arduino_Setting_Polling_Read_Write.Scents.Peanut_Butter;
+                    atomizerControl.AtomizerTwoContents = Arduino_Setting_Polling_Read_Write.Scents.Cinnamon;
                 if (i == 2)
-                    atomizerControl.AtomizerThreeContnets = Arduino_Setting_Polling_Read_Write.Scents.Peanut_Butter;
+                    atomizerControl.AtomizerThreeContnets = Arduino_Setting_Polling_Read_Write.Scents.Cinnamon;
                 if (i == 3)
-                    atomizerControl.AtomizerFourContents = Arduino_Setting_Polling_Read_Write.Scents.Peanut_Butter;
+                    atomizerControl.AtomizerFourContents = Arduino_Setting_Polling_Read_Write.Scents.Cinnamon;
             }
 
         }
@@ -183,27 +183,27 @@ public class DiagnosticTestController : MonoBehaviour
                 }
             }
         }
-        if (atomizerControl.atomizerContents[index] == Arduino_Setting_Polling_Read_Write.Scents.Peanut_Butter)
+        if (atomizerControl.atomizerContents[index] == Arduino_Setting_Polling_Read_Write.Scents.Cinnamon)
         {
             Debug.Log("Peanut butter is selected");
             // correctObject = peanut_butter;
 
             for (var i = 0; i < potentialCorrect.Length; i++)
             {
-                if (potentialCorrect[i].name == "Peanut_Butter")
+                if (potentialCorrect[i].name == "Cinnamon")
                 {
                     correctObject = potentialCorrect[i];
                 }
             }
 
         }
-        if (atomizerControl.atomizerContents[index] == Arduino_Setting_Polling_Read_Write.Scents.Lavender)
+        if (atomizerControl.atomizerContents[index] == Arduino_Setting_Polling_Read_Write.Scents.Rose)
         {
             Debug.Log("Lavender  is selected");
             // correctObject = Lavendar;
             for (var i = 0; i < potentialCorrect.Length; i++)
             {
-                if (potentialCorrect[i].name == "Lavendar")
+                if (potentialCorrect[i].name == "Rose")
                 {
                     correctObject = potentialCorrect[i];
                 }
@@ -216,7 +216,7 @@ public class DiagnosticTestController : MonoBehaviour
         //Place correct object
         int randPos = Random.Range(0, 4);
 
-        GameObject obj = Instantiate(correctObject, positionsTaken[randPos].position, Quaternion.identity);
+        GameObject obj = Instantiate(correctObject, positionsTaken[randPos].position, positionsTaken[randPos].rotation);
         instantiatedObjects.Add(obj);
         positionsTaken.Remove(positionsTaken[randPos]);
         SendDataToCompiler(obj, index - 1);
@@ -225,7 +225,7 @@ public class DiagnosticTestController : MonoBehaviour
         for (var i = 0; i < positionsTaken.Count; i++)
         {
             int randObject = Random.Range(0, incorrectObjects.Length);
-            GameObject objIncorrect = Instantiate(incorrectObjects[randObject], positionsTaken[i].position, Quaternion.identity);
+            GameObject objIncorrect = Instantiate(incorrectObjects[randObject], positionsTaken[i].position, positionsTaken[i].rotation);
             instantiatedObjects.Add(objIncorrect);
         }
 

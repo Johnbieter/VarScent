@@ -15,7 +15,7 @@ using System.Collections;
 public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
 {
     public SerialController serialController;
-    public enum Scents { Pine, Citrus, Peanut_Butter, Lavender, Zero };
+    public enum Scents { Pine, Citrus, Cinnamon, Rose, Zero };
 
 
     public Scents AtomizerOneContents;
