@@ -27,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706512453156382838}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 25, y: 121.72458, z: 12.004884}
+  m_LocalRotation: {x: 0.018939981, y: 0.7068531, z: -0.018939981, w: 0.7068531}
+  m_LocalPosition: {x: 0.22511, y: -0.040498, z: -0.030761}
+  m_LocalScale: {x: 30.000002, y: 146.0695, z: 14.405861}
   m_Children:
   - {fileID: 5885576082691971375}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 3.07, y: 90, z: 0}
 --- !u!33 &3830877099862392169
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.058879714, y: 0.025902888, z: 0.21930975}
-  m_Center: {x: -0.006152203, y: 0.00092111574, z: -0.008354989}
+  m_Size: {x: 0.058879714, y: 0.025902888, z: 0.12347935}
+  m_Center: {x: -0.0061522042, y: 0.00092111545, z: -0.014944171}
 --- !u!114 &1273472586152693243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e9b1a053987104ea36f468f427e578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverObject: {fileID: 706512453156382838}
+  hoverObject: {fileID: 8556480290352518015}
   isSelected: 0
 --- !u!1 &8556480290352518015
 GameObject:

@@ -1,0 +1,27 @@
+Object Selected, Correct, Was Selected, Time Hovered
+toster_01,True,True,0.597099
+flower_sticker_01,True,False,0.0134784
+pan_01,True,True,2.335117
+clock_01,True,False,0
+frame_01,True,False,0
+frame_02,True,False,0
+ladle_01,True,True,0.9191814
+rolling_pin_01,True,True,0.4988035
+big_knife_01,True,True,1.013648
+socket_01,True,False,0
+small_knife_01,True,False,2.189395
+medium_knife_01,False,False,1.750787
+heart_sticker_01,False,False,0
+key_sticker_01,False,False,0
+magnet_sticker_01,False,False,0
+moose_sticker_01,False,False,0
+smile_sticker_01,False,True,0.4860561
+star_sticker_01,False,False,0
+kettle_01,False,True,1.026166
+radio_01,False,False,0.1080625
+souppot_01,False,True,0.5696138
+jars_01,False,True,1.186198
+bin_01,False,False,0
+cutting_board_01,False,False,0.0540802
+switch_01,False,False,0
+spatula_01,False,True,1.057394

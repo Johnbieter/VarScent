@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Linq;
+
 public class DiagnosticTestController : MonoBehaviour
 {
     public RaycastingLogInfo logInfo;
@@ -21,6 +23,7 @@ public class DiagnosticTestController : MonoBehaviour
     public GameObject correctObject;
     //This is just a list of random incorrect objects.
     public GameObject[] incorrectObjects;
+    private GameObject[] incorrectObjectsToSpawn;
 
     public List<GameObject> instantiatedObjects = new List<GameObject>(0);
 
@@ -143,6 +146,9 @@ public class DiagnosticTestController : MonoBehaviour
 
 
 
+        //Reset Incorrect Objects to Spawn
+        incorrectObjectsToSpawn = incorrectObjects;
+
         //Resetup positionsTaken;
         positionsTaken = new List<Transform>(0);
         for (var y = 0; y < positions.Length; y++)
@@ -216,7 +222,8 @@ public class DiagnosticTestController : MonoBehaviour
         //Place correct object
         int randPos = Random.Range(0, 4);
 
-        GameObject obj = Instantiate(correctObject, positionsTaken[randPos].position, positionsTaken[randPos].rotation);
+        GameObject obj = Instantiate(correctObject, positionsTaken[randPos].position, correctObject.transform.rotation);
+       
         instantiatedObjects.Add(obj);
         positionsTaken.Remove(positionsTaken[randPos]);
         SendDataToCompiler(obj, index - 1);
@@ -224,9 +231,13 @@ public class DiagnosticTestController : MonoBehaviour
         //Place random incorrect objects
         for (var i = 0; i < positionsTaken.Count; i++)
         {
-            int randObject = Random.Range(0, incorrectObjects.Length);
-            GameObject objIncorrect = Instantiate(incorrectObjects[randObject], positionsTaken[i].position, positionsTaken[i].rotation);
+            int randObject = Random.Range(0, incorrectObjectsToSpawn.Length);
+            GameObject objIncorrect = Instantiate(incorrectObjectsToSpawn[randObject], positionsTaken[i].position, positionsTaken[i].rotation);
             instantiatedObjects.Add(objIncorrect);
+            
+            var incorrectObjectsToSpawnList = incorrectObjectsToSpawn.ToList();
+            incorrectObjectsToSpawnList.RemoveAt(randObject);
+            incorrectObjectsToSpawn = incorrectObjectsToSpawnList.ToArray();
         }
 
         //Begin Test
@@ -262,12 +273,13 @@ public class DiagnosticTestController : MonoBehaviour
             atomizerControl.RunTimer();
 
             scentTimerDisplay.text = "Scent Time: " + atomizerControl.scentTimer.ToString();
+            
             breakTimerDisplay.enabled = false;
             scentTimerDisplay.enabled = true;
             if (atomizerControl.scentTimer <= 0)
             {
-                
-                    CompileData();
+                scentTimerDisplay.text = "Scent Time: 0";
+                CompileData();
                     testComplete = true;
                 
             }
