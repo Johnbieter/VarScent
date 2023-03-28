@@ -8,7 +8,9 @@ public class Selectable : MonoBehaviour
     public bool selected = false;
     public float timeLookedAt;
     public Material originalMaterial;
-
+    public float timeSelected;
+    private float currentTime;
+    bool logTime = false;
     bool onHover;
     public void SetBool(bool onhover)
     {
@@ -17,10 +19,20 @@ public class Selectable : MonoBehaviour
 
     private void Update()
     {
+        currentTime += Time.time;
+
+        if (selected == true && logTime == false)
+        {
+            timeSelected = currentTime;
+            logTime = true;
+        }
+
         if (onHover)
         {
             timeLookedAt += Time.deltaTime;
         }
+
+
     }
    
 

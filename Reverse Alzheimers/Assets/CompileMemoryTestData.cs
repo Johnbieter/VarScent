@@ -17,6 +17,8 @@ public class CompileMemoryTestData : MonoBehaviour
         public bool correct;
         public bool wasSelected;
         public float timeLookedAt;
+        public float timeSelected;
+
     }
 
 
@@ -65,6 +67,7 @@ public class CompileMemoryTestData : MonoBehaviour
             newMemoryData.correct = gameController.objectList[x].GetComponent<Selectable>().correct;
             newMemoryData.wasSelected = gameController.objectList[x].GetComponent<Selectable>().selected;
             newMemoryData.timeLookedAt = gameController.objectList[x].GetComponent<Selectable>().timeLookedAt;
+            newMemoryData.timeSelected = gameController.objectList[x].GetComponent<Selectable>().timeSelected;
             memoryDataList.data.Add(newMemoryData);
         }
 
@@ -86,7 +89,7 @@ public class CompileMemoryTestData : MonoBehaviour
     {
 
         TextWriter tw = new StreamWriter(Application.dataPath + "/" + filename + ".csv", false);
-        tw.WriteLine("Object Selected, Correct, Was Selected, Time Hovered");
+        tw.WriteLine("Object Selected, Correct, Was Selected, Time Hovered, Time Selected");
         tw.Close();
 
         if (memoryDataList.data.Count > 0)
@@ -95,7 +98,7 @@ public class CompileMemoryTestData : MonoBehaviour
 
             for (int i = 0; i < memoryDataList.data.Count; i++)
             {
-                tw.WriteLine(memoryDataList.data[i].objectName + "," + memoryDataList.data[i].correct + "," + memoryDataList.data[i].wasSelected + "," + memoryDataList.data[i].timeLookedAt);
+                tw.WriteLine(memoryDataList.data[i].objectName + "," + memoryDataList.data[i].correct + "," + memoryDataList.data[i].wasSelected + "," + memoryDataList.data[i].timeLookedAt + "," + memoryDataList.data[i].timeSelected);
 
             }
 

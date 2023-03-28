@@ -72,6 +72,15 @@ public class SerialController : MonoBehaviour
         thread.Start();
     }
 
+    public void RePort()
+    {
+        serialThread = new SerialThreadLines(portName,
+                                                 baudRate,
+                                                 reconnectionDelay,
+                                                 maxUnreadMessages);
+        thread = new Thread(new ThreadStart(serialThread.RunForever));
+        thread.Start();
+    }
     // ------------------------------------------------------------------------
     // Invoked whenever the SerialController gameobject is deactivated.
     // It stops and destroys the thread that was reading from the serial device.

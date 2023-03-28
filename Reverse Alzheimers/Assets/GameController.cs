@@ -36,9 +36,12 @@ public class GameController : MonoBehaviour
     public InputField testInput;
     public InputField fileNameInput;
     public Toggle useAtomizer;
+    public InputField portInput;
 
     [SerializeField] CompileMemoryTestData compileMemoryTest;
     [SerializeField] Arduino_Setting_Polling_Read_Write arduinoSettings;
+
+    [SerializeField] SerialController serialController;
 
     private void FixedUpdate()
     {
@@ -87,6 +90,8 @@ public class GameController : MonoBehaviour
         timeToTest = float.Parse(testInput.text, CultureInfo.InvariantCulture.NumberFormat);
         compileMemoryTest = GetComponent<CompileMemoryTestData>();
         compileMemoryTest.filename = fileNameInput.text;
+        serialController.portName = portInput.text;
+        //serialController.RePort();
 
         arduinoSettings.useAtomizer = this.useAtomizer.isOn;
 
