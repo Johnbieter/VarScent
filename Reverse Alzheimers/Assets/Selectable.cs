@@ -12,6 +12,7 @@ public class Selectable : MonoBehaviour
     private float currentTime;
     bool logTime = false;
     bool onHover;
+
     public void SetBool(bool onhover)
     {
         onHover = onhover;
@@ -19,7 +20,7 @@ public class Selectable : MonoBehaviour
 
     private void Update()
     {
-        currentTime += Time.time;
+        currentTime += Time.deltaTime;
 
         if (selected == true && logTime == false)
         {
@@ -33,6 +34,11 @@ public class Selectable : MonoBehaviour
         }
 
 
+    }
+
+    public void TestStart()
+    {
+        currentTime = 0;
     }
    
 

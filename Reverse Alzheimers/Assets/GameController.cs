@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour
     public InputField testInput;
     public InputField fileNameInput;
     public Toggle useAtomizer;
-    public InputField portInput;
+    //public InputField portInput;
 
     [SerializeField] CompileMemoryTestData compileMemoryTest;
     [SerializeField] Arduino_Setting_Polling_Read_Write arduinoSettings;
@@ -82,17 +82,25 @@ public class GameController : MonoBehaviour
         player.transform.position = spawnpoint.position;
         onTestStart.Invoke();
         testStarted = true;
+        for (var i = 0; i < objectList.Count; i++)
+        {
+            objectList[i].GetComponent<Selectable>().TestStart();
+        }
     }
     public void StartRemember()
     {
+
+        //serialController.RePort();
+
         startRemember = true;
         timeToRemember = float.Parse(rememberInput.text, CultureInfo.InvariantCulture.NumberFormat);
         timeToTest = float.Parse(testInput.text, CultureInfo.InvariantCulture.NumberFormat);
         compileMemoryTest = GetComponent<CompileMemoryTestData>();
         compileMemoryTest.filename = fileNameInput.text;
-        serialController.portName = portInput.text;
-        //serialController.RePort();
+        //serialController.portName = portInput.text;
+       
 
+       
         arduinoSettings.useAtomizer = this.useAtomizer.isOn;
 
         Debug.Log(useAtomizer.isOn);
@@ -100,6 +108,8 @@ public class GameController : MonoBehaviour
         {
             arduinoSettings.RunTest();
         }
+
+        
         
     }
 

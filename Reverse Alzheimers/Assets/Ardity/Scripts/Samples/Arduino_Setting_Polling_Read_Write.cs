@@ -117,6 +117,10 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
         scentTimer -= Time.deltaTime;
     }
 
+    public void StopTest()
+    {
+        ToggleFirstAtomizer(false);
+    }
     public void RunTest()
     {
         scentTimer = scentTime;
@@ -126,9 +130,10 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
 
         if (currentScent == 1)
         {
-            if (scentTimer > 0) ToggleFirstAtomizer(true);
+            if (scentTimer > 0) { ToggleFirstAtomizer(true); Debug.Log("Atomizer on!"); }
             else
             {
+                Debug.Log("Atomizer off!");
                 ToggleFirstAtomizer(false);
                 if (breakTimer < 0) ResetTimes();  //Wait for break to be up before continuing onto next scent
             }

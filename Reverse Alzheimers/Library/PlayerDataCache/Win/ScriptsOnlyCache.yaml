@@ -442,7 +442,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: e07d341593b742f233fa3eb3c967c207
+      Hash: 87fe4c0451c9c9acada40167f1243519
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -1463,5 +1463,5 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/VARScent/_Levels/TherapyTestScene.unity
-  playerPath: C:/Users/lifeu/OneDrive/Documents/GitHub/VarScent/Reverse Alzheimers/Builds/MemoryTest/Reverse
+  playerPath: C:/Users/lifeu/OneDrive/Documents/GitHub/VarScent/Reverse Alzheimers/Builds/MemoryTest(WithStartSce)/Reverse
     Alzheimers.exe
