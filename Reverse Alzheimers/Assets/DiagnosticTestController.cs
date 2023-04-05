@@ -120,13 +120,18 @@ public class DiagnosticTestController : MonoBehaviour
     }
 
 
-    public void StartPrep()
+
+    public void DestoryObjects()
     {
-        testPrep = true;
+        if (instantiatedObjects == null) return;
         for (var i = 0; i < instantiatedObjects.Count; i++)
         {
             Destroy(instantiatedObjects[i]);
         }
+    }
+    public void StartPrep()
+    {
+        testPrep = true;
         instantiatedObjects = new List<GameObject>(0);
     }
     public void ConfigureTest()
@@ -250,7 +255,7 @@ public class DiagnosticTestController : MonoBehaviour
         if (testPrep)
         {
             atomizerControl.breakTimer -= Time.deltaTime;
-            breakTimerDisplay.text = "Break: " + atomizerControl.breakTimer.ToString();
+            breakTimerDisplay.text = "Break: " + Mathf.Round(atomizerControl.breakTimer).ToString();
             scentTimerDisplay.enabled = false;
             breakTimerDisplay.enabled = true;
 
@@ -266,22 +271,26 @@ public class DiagnosticTestController : MonoBehaviour
         {
             
             logCompiler.RecordTestInfo(instantiatedObjects[0], instantiatedObjects);
+           
         }
 
         if (testComplete == false)
         {
+
             atomizerControl.RunTimer();
 
-            scentTimerDisplay.text = "Scent Time: " + atomizerControl.scentTimer.ToString();
-            
+            scentTimerDisplay.text = "Scent Time: " + Mathf.Round(atomizerControl.scentTimer).ToString();
+           
             breakTimerDisplay.enabled = false;
             scentTimerDisplay.enabled = true;
             if (atomizerControl.scentTimer <= 0)
             {
+                
                 scentTimerDisplay.text = "Scent Time: 0";
                 CompileData();
                     testComplete = true;
-                
+                DestoryObjects();
+
             }
 
         }
