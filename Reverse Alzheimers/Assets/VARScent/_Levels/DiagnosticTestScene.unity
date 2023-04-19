@@ -6183,11 +6183,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3054075884060524567, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
       propertyPath: portName
-      value: COM4
+      value: COM5
       objectReference: {fileID: 0}
     - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
       propertyPath: scentTime
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: scentTimer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
       propertyPath: AtomizerOneContents

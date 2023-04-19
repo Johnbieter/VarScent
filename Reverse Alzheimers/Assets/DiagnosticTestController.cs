@@ -262,6 +262,7 @@ public class DiagnosticTestController : MonoBehaviour
             if (atomizerControl.breakTimer <= 0)
             {
                 ConfigureTest();
+                atomizerControl.scentTimer = 1;
                 atomizerControl.RunTest();
                 testPrep = false;
             }
@@ -285,8 +286,9 @@ public class DiagnosticTestController : MonoBehaviour
             scentTimerDisplay.enabled = true;
             if (atomizerControl.scentTimer <= 0)
             {
-                
+                atomizerControl.scentTimer = 0;
                 scentTimerDisplay.text = "Scent Time: 0";
+                atomizerControl.ToggleAllOff();
                 CompileData();
                     testComplete = true;
                 DestoryObjects();
@@ -294,8 +296,6 @@ public class DiagnosticTestController : MonoBehaviour
             }
 
         }
-        
-        
     }
 
 

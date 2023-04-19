@@ -227,4 +227,9 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
         breakTimer = breakTime;
 
     }
+
+    public void ToggleAllOff()
+    {
+    serialController.SendSerialMessage("0");
+    }
 }
