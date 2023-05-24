@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*-------------------------------------------------------
+ Script for selectable objects in the scene.
+ --------------------------------------------------------*/
+
 public class Selectable : MonoBehaviour
 {
     public bool correct;
@@ -20,17 +24,18 @@ public class Selectable : MonoBehaviour
 
     private void Update()
     {
-        currentTime += Time.deltaTime;
+        currentTime += Time.deltaTime; //Timer
 
-        if (selected == true && logTime == false)
+        if (selected == true && logTime == false) //If the primary button was pressed on object
         {
+            //Then mark time and prevent from marking again
             timeSelected = currentTime;
             logTime = true;
         }
 
         if (onHover)
         {
-            timeLookedAt += Time.deltaTime;
+            timeLookedAt += Time.deltaTime; //Record how long they took when looking at object
         }
 
 

@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
-/*----------------------------------------------------------------
- 
-------------------------------------------------------------------*/
+/*-----------------------------------------------------------------
+ Script will detect if player is point at an object and if they
+press a button. If its on a selectable object then it will register
+the selection and enable the selection material.
+-------------------------------------------------------------------*/
 
 public class HighlightObject : MonoBehaviour
 {
@@ -25,8 +27,10 @@ public class HighlightObject : MonoBehaviour
     void Start()
     {
 
-        gC = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+        gC = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>(); //might want to replace this with a more efficient way
         rayInteractor = GetComponent<XRRayInteractor>();
+
+        //Gets the devices with the wanted characteristics (Which one is left which one is right)
         if (!rightHand)
         {
             List<InputDevice> devices = new List<InputDevice>();
@@ -61,27 +65,29 @@ public class HighlightObject : MonoBehaviour
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
 
         
-        if (primaryButtonValue == true)
+        if (primaryButtonValue == true) //If primary button has been pressed
         {
-           if (canSelect == true)
+           if (canSelect == true) //And if object the script is on can be selected
            {
                 canSelect = false;
-                Invoke("CanSelectAgain", selectTimeOut);
+                Invoke("CanSelectAgain", selectTimeOut); //Reselect cool down
 
-                if (rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
+                if (rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit)) //if raycast is hitting something
                 {
 
-                    if (hit.transform.gameObject.GetComponent<Selectable>())
+                    if (hit.transform.gameObject.GetComponent<Selectable>()) //And if the something has a Selectable component
                     {
                         Selectable hitSelect = hit.transform.gameObject.GetComponent<Selectable>();
                         hitSelect.selected = !hitSelect.selected;
                         if (hitSelect.selected)
                         {
+                            //Turn on selected material
                             hit.transform.gameObject.GetComponent<MeshRenderer>().material = onSelectMaterial;
                             hit.transform.gameObject.tag = "Unselectable";
                         }
                         else
                         {
+                            //Turn off selected material
                             hit.transform.gameObject.GetComponent<MeshRenderer>().material = hitSelect.originalMaterial;
                             hit.transform.gameObject.tag = "Selectable";
                         }

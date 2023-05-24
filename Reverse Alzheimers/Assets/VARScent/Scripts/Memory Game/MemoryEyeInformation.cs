@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*---------------------------------------------------------------
+ Records how long the player has looked at any selectable object
+ ----------------------------------------------------------------*/
+
 public class MemoryEyeInformation : MonoBehaviour
 {
     public List<Selectable> objectsToLog;
@@ -19,9 +23,10 @@ public class MemoryEyeInformation : MonoBehaviour
 
         for (var i = 0; i < selectableGameobjects.Length; i++)
         {
-            objectsToLog.Add(selectableGameobjects[i].GetComponent<Selectable>());
+            objectsToLog.Add(selectableGameobjects[i].GetComponent<Selectable>()); //Add all the selectable objects into a list
         }
     }
+
     public void Update()
     {
         if (start)
@@ -36,10 +41,10 @@ public class MemoryEyeInformation : MonoBehaviour
 
                 GameObject lookObject = hit.transform.gameObject;
 
-                if (hit.transform.gameObject.GetComponent<Selectable>())
+                if (hit.transform.gameObject.GetComponent<Selectable>()) //If the object we are looking at has a selectable component
                 {
                     //Debug.Log("We hit an object");
-                    hit.transform.gameObject.GetComponent<Selectable>().timeLookedAt += Time.deltaTime;
+                    hit.transform.gameObject.GetComponent<Selectable>().timeLookedAt += Time.deltaTime; //Record how long player is looking at object
                 }
 
 
