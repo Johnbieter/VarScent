@@ -247,7 +247,7 @@ public class DiagnosticTestController : MonoBehaviour
         //Place correct object
         int randPos = Random.Range(0, 4);
 
-        GameObject obj = Instantiate(correctObject, positionsTaken[randPos].position, correctObject.transform.rotation);
+        GameObject obj = Instantiate(correctObject, positionsTaken[randPos].position, positionsTaken[randPos].rotation);
        
         instantiatedObjects.Add(obj);
         positionsTaken.Remove(positionsTaken[randPos]);
