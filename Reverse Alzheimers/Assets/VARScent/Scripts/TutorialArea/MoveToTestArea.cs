@@ -4,7 +4,16 @@ using UnityEngine;
 
 public class MoveToTestArea : MonoBehaviour
 {
+    public bool playerInsideTutorial = true;
     public Transform TestPos;
+
+    private void Update()
+    {
+        if (playerInsideTutorial)
+        {
+
+        }  
+    }
 
     public void MoveToTest()
     {

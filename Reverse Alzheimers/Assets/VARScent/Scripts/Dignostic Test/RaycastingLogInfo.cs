@@ -29,6 +29,8 @@ public class RaycastingLogInfo : MonoBehaviour
     [SerializeField] private string selectableTag = "Selectable";
     private Transform _selection;
 
+    public int tutScore;
+
     public CSVWriter myWriter; //Might be able to make this private -- already initilized in Start()
 
     void Start()
@@ -99,6 +101,40 @@ public class RaycastingLogInfo : MonoBehaviour
 
         }
     }
+    
+    public void RecordTestInfo(List<GameObject> objectList) //For the tutorial in the Diagnotic level
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+
+            //If player looks away from object, deactivate selection material
+            /*if (_selection != null)
+            {
+                var selectionRenderer = _selection.GetComponent<DiagnosticSelectable>();
+                selectionRenderer.isSelected = false;
+                //selectionRenderer.material = defaultMaterial;
+                _selection = null;
+            }*/
+
+            //If player looks at a selectable object, enable selection material
+            var selection = hit.transform;
+            if (selection.CompareTag(selectableTag))
+            {
+                var selectionRenderer = selection.GetComponent<DiagnosticSelectable>();
+                if (selectionRenderer != null && selectionRenderer.isSelected == false)
+                {
+                    selectionRenderer.isSelected = true;
+                    tutScore++;
+                }
+                _selection = selection;
+            }
+
+        }
+    }
+
     public void ResetForNextTest()
     {
 

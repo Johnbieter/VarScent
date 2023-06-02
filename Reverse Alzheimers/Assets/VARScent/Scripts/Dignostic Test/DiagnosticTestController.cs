@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Linq;
+//using System;
 
 /*---------------------------------------------------------------------------------
 The game manager for the Diagnostic Test Scene. This script will tell what script
@@ -43,7 +44,6 @@ public class DiagnosticTestController : MonoBehaviour
 
     Camera MainCamera;
     RaycastingLogInfo logCompiler;
-
 
     private int index;
 
@@ -293,9 +293,7 @@ public class DiagnosticTestController : MonoBehaviour
         //While test is going record the info in the logCompiler component
         if (atomizerControl.scentTimer > 0)
         {
-            
             logCompiler.RecordTestInfo(instantiatedObjects[0], instantiatedObjects);
-           
         }
 
         if (testComplete == false)
@@ -304,7 +302,7 @@ public class DiagnosticTestController : MonoBehaviour
             atomizerControl.RunTimer();
 
             scentTimerDisplay.text = "Scent Time: " + Mathf.Round(atomizerControl.scentTimer).ToString();
-           
+
             breakTimerDisplay.enabled = false;
             scentTimerDisplay.enabled = true;
 
