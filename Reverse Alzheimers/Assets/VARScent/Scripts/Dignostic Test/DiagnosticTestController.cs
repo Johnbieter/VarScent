@@ -57,7 +57,8 @@ public class DiagnosticTestController : MonoBehaviour
     [SerializeField] TMP_InputField documentName;
     [SerializeField] TMP_InputField setScentTimer;
     [SerializeField] TMP_InputField setBreakTimer;
-    [SerializeField] TMP_InputField setComPort;
+    //[SerializeField] TMP_InputField setComPort;
+    [SerializeField] TMP_Dropdown setComPort;
     [SerializeField] TMP_Dropdown[] atomizerContents;
 
 
@@ -78,7 +79,21 @@ public class DiagnosticTestController : MonoBehaviour
 
         atomizerControl.breakTimer = atomizerControl.breakTime;
 
-        serial.portName = setComPort.text; //Assigns Arduino port to the UI element
+        //serial.portName = setComPort.; //Assigns Arduino port to the UI element
+        switch (setComPort.value)
+        {
+            case 0:
+                serial.portName = "COM3";
+                break;
+            case 1:
+                serial.portName = "COM4";
+                break;
+            case 2:
+                serial.portName = "COM5";
+                break;
+        }
+
+        Debug.Log(serial.portName);
 
         //Sets the enums in the atomizerControl to the selected UI elements
         for (var i = 0; i < 4; i++)
@@ -89,11 +104,11 @@ public class DiagnosticTestController : MonoBehaviour
             {
                 if (i == 0)
                     atomizerControl.AtomizerOneContents = Arduino_Setting_Polling_Read_Write.Scents.Pine;
-                if(i == 1)
+                if (i == 1)
                     atomizerControl.AtomizerTwoContents = Arduino_Setting_Polling_Read_Write.Scents.Pine;
                 if (i == 2)
                     atomizerControl.AtomizerThreeContnets = Arduino_Setting_Polling_Read_Write.Scents.Pine;
-                if(i == 3)
+                if (i == 3)
                     atomizerControl.AtomizerFourContents = Arduino_Setting_Polling_Read_Write.Scents.Pine;
             }
             if (value == 1)
@@ -146,7 +161,7 @@ public class DiagnosticTestController : MonoBehaviour
         }
     }
 
-    
+
     public void StartPrep()
     {
         testPrep = true;
@@ -159,12 +174,12 @@ public class DiagnosticTestController : MonoBehaviour
 
         index += 1;
 
-       
+
         if (index >= atomizerControl.atomizerContents.Length)
         {
             //Dont cause null error. Return on finish.
             return;
-            
+
         }
 
         //Delete objects from before
@@ -187,7 +202,7 @@ public class DiagnosticTestController : MonoBehaviour
 
 
 
-        
+
         if (atomizerControl.atomizerContents[index] == Arduino_Setting_Polling_Read_Write.Scents.Pine)
         {
             Debug.Log("Pine is selected");
@@ -248,7 +263,7 @@ public class DiagnosticTestController : MonoBehaviour
         int randPos = Random.Range(0, 4);
 
         GameObject obj = Instantiate(correctObject, positionsTaken[randPos].position, positionsTaken[randPos].rotation);
-       
+
         instantiatedObjects.Add(obj);
         positionsTaken.Remove(positionsTaken[randPos]);
         SendDataToCompiler(obj, index - 1);
@@ -259,7 +274,7 @@ public class DiagnosticTestController : MonoBehaviour
             int randObject = Random.Range(0, incorrectObjectsToSpawn.Length);
             GameObject objIncorrect = Instantiate(incorrectObjectsToSpawn[randObject], positionsTaken[i].position, positionsTaken[i].rotation);
             instantiatedObjects.Add(objIncorrect);
-            
+
             var incorrectObjectsToSpawnList = incorrectObjectsToSpawn.ToList();
             incorrectObjectsToSpawnList.RemoveAt(randObject);
             incorrectObjectsToSpawn = incorrectObjectsToSpawnList.ToArray();
@@ -313,7 +328,7 @@ public class DiagnosticTestController : MonoBehaviour
                 scentTimerDisplay.text = "Scent Time: 0";
                 atomizerControl.ToggleAllOff();
                 CompileData();
-                    testComplete = true;
+                testComplete = true;
                 DestoryObjects();
 
             }
