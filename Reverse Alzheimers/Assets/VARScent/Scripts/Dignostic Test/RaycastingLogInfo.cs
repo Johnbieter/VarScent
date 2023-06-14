@@ -53,7 +53,7 @@ public class RaycastingLogInfo : MonoBehaviour
 
             if (lookObject.name == correctObj.name)
             {
-                Debug.Log("Object found");
+                //Debug.Log("Object found");
 
                 if (!correctObjectFound)
                 {
