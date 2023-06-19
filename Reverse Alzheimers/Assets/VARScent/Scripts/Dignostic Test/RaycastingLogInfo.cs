@@ -29,6 +29,8 @@ public class RaycastingLogInfo : MonoBehaviour
     [SerializeField] private string selectableTag = "Selectable";
     private Transform _selection;
 
+    public AudioSource selectSound;
+
     public int tutScore;
 
     public CSVWriter myWriter; //Might be able to make this private -- already initilized in Start()
@@ -91,6 +93,8 @@ public class RaycastingLogInfo : MonoBehaviour
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))
             {
+                selectSound.pitch = Random.Range(0.80f, 1.3f);
+                selectSound.Play();
                 var selectionRenderer = selection.GetComponent<DiagnosticSelectable>();
                 if (selectionRenderer != null)
                 {
@@ -98,7 +102,7 @@ public class RaycastingLogInfo : MonoBehaviour
                 }
                 _selection = selection;
             }
-
+            //Debug.Log(lookObject.name);
         }
     }
     

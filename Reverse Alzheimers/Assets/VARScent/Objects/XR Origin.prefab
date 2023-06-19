@@ -186,6 +186,7 @@ MonoBehaviour:
   correctObjectFound: 0
   time: 0
   selectableTag: Selectable
+  selectSound: {fileID: 0}
   tutScore: 0
   myWriter: {fileID: 9022025782664990826}
 --- !u!114 &9022025782664990826
