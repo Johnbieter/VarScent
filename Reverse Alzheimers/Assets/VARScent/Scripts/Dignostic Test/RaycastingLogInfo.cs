@@ -93,7 +93,7 @@ public class RaycastingLogInfo : MonoBehaviour
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))
             {
-                selectSound.pitch = Random.Range(0.80f, 1.3f);
+                selectSound.pitch = Random.Range(0.9f, 1.2f);
                 selectSound.Play();
                 var selectionRenderer = selection.GetComponent<DiagnosticSelectable>();
                 if (selectionRenderer != null)
@@ -127,6 +127,8 @@ public class RaycastingLogInfo : MonoBehaviour
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))
             {
+                selectSound.pitch = Random.Range(0.9f, 1.2f);
+                selectSound.Play();
                 var selectionRenderer = selection.GetComponent<DiagnosticSelectable>();
                 if (selectionRenderer != null && selectionRenderer.isSelected == false)
                 {

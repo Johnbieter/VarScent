@@ -84,15 +84,15 @@ public class DiagnosticTestController : MonoBehaviour
         {
             case 0:
                 serial.portName = "COM3";
-                serial.RePort(); //<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
+                //serial.RePort(); //<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
                 break;
             case 1:
                 serial.portName = "COM4";
-                serial.RePort();//<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
+                //serial.RePort();//<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
                 break;
             case 2:
                 serial.portName = "COM5";
-                serial.RePort();//<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
+                //serial.RePort();//<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
                 break;
         }
 
