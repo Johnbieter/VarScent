@@ -101,6 +101,7 @@ public class RaycastingLogInfo : MonoBehaviour
                     selectionRenderer.isSelected = true;
                 }
                 _selection = selection;
+
             }
             //Debug.Log(lookObject.name);
         }
@@ -126,14 +127,14 @@ public class RaycastingLogInfo : MonoBehaviour
             //If player looks at a selectable object, enable selection material
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))
-            {
-                selectSound.pitch = Random.Range(0.9f, 1.2f);
-                selectSound.Play();
+            { 
                 var selectionRenderer = selection.GetComponent<DiagnosticSelectable>();
                 if (selectionRenderer != null && selectionRenderer.isSelected == false)
                 {
                     selectionRenderer.isSelected = true;
                     tutScore++;
+                    selectSound.pitch = Random.Range(0.95f, 1.2f);
+                    selectSound.Play();
                 }
                 _selection = selection;
             }
