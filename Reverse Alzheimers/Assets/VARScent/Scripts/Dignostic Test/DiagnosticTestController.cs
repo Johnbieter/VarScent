@@ -83,16 +83,22 @@ public class DiagnosticTestController : MonoBehaviour
         switch (setComPort.value)
         {
             case 0:
+                serial.enabled = false;
+                serial.enabled = true;
                 serial.portName = "COM3";
-                //serial.RePort(); //<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
+                serial.RePort(); //<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
                 break;
             case 1:
+                serial.enabled = false;
+                serial.enabled = true;
                 serial.portName = "COM4";
-                //serial.RePort();//<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
+                serial.RePort(); //<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
                 break;
             case 2:
+                serial.enabled = false;
+                serial.enabled = true;
                 serial.portName = "COM5";
-                //serial.RePort();//<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
+                serial.RePort(); //<----------IF ERROR THIS COULD BE BREAKING THE SCRIPT------------
                 break;
         }
 

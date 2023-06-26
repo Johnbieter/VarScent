@@ -52,7 +52,7 @@ public class RaycastingLogInfo : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
 
             GameObject lookObject = hit.transform.gameObject;
-
+            
             if (lookObject.name == correctObj.name)
             {
                 //Debug.Log("Object found");
@@ -93,15 +93,15 @@ public class RaycastingLogInfo : MonoBehaviour
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))
             {
-                selectSound.pitch = Random.Range(0.9f, 1.2f);
-                selectSound.Play();
                 var selectionRenderer = selection.GetComponent<DiagnosticSelectable>();
-                if (selectionRenderer != null)
+                    
+                if (selectionRenderer != null && selectionRenderer.isSelected == false)
                 {
                     selectionRenderer.isSelected = true;
+                    selectSound.pitch = Random.Range(0.95f, 1.2f);
+                    selectSound.Play();
                 }
                 _selection = selection;
-
             }
             //Debug.Log(lookObject.name);
         }
