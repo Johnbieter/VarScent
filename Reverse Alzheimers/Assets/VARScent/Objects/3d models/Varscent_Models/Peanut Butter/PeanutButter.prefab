@@ -32,8 +32,9 @@ Transform:
   m_Children:
   - {fileID: 9031050376425067803}
   - {fileID: 3248505862741846173}
+  - {fileID: 5116593722929896481}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1612687255043267433
 BoxCollider:
@@ -153,6 +154,84 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &4650938156953615306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 602622283044316061}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 905c8720ddcc2f346b41c801a871353a, type: 2}
+    - target: {fileID: -7511558181221131132, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: ead44a5d6611fb942bfead10d499c6a1, type: 2}
+    - target: {fileID: -7511558181221131132, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6664a724c975d854cbfa148d0b3c46d0, type: 2}
+    - target: {fileID: 919132149155446097, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+      propertyPath: m_Name
+      value: Peanut Butter
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+--- !u!4 &5116593722929896481 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eee1854a98c90164a9c04c3cc091adf3, type: 3}
+  m_PrefabInstance: {fileID: 4650938156953615306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8853519438599959280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -208,6 +287,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: dbab2dbbc0088a748a22e344f7f42965, type: 3}
       propertyPath: m_Name
       value: PeanutButter
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dbab2dbbc0088a748a22e344f7f42965, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
