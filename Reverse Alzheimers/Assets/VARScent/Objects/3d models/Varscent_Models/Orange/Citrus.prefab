@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5998482460007357832
 Transform:
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 7073526393211105166}
   - {fileID: 3034141056534494242}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &525374394104716407
 BoxCollider:
@@ -87,7 +87,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7073526393211105166
 Transform:
@@ -319,6 +319,10 @@ PrefabInstance:
     - target: {fileID: 4644684968783595678, guid: 3ea2b2998c0c626448b11043873239e4, type: 3}
       propertyPath: m_TagString
       value: Selectable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4644684968783595678, guid: 3ea2b2998c0c626448b11043873239e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4644684968783595679, guid: 3ea2b2998c0c626448b11043873239e4, type: 3}
       propertyPath: m_Radius

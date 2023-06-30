@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 416093750737998594}
   m_Layer: 0
   m_Name: PeanutButter
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 3248505862741846173}
   - {fileID: 5116593722929896481}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1612687255043267433
 BoxCollider:
@@ -55,8 +55,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.5228043, y: 4.1874447, z: 1}
-  m_Center: {x: -0.011562347, y: -0.1893816, z: 0}
+  m_Size: {x: 4.5228043, y: 4.405615, z: 1}
+  m_Center: {x: -0.011562347, y: -0.08029652, z: 0}
 --- !u!114 &416093750737998594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,7 +98,7 @@ Transform:
   m_GameObject: {fileID: 861508868496578538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.4933732, y: 3.4933732, z: 3.4933732}
+  m_LocalScale: {x: 4.2654085, y: 4.2654085, z: 4.2654085}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 602622283044316061}

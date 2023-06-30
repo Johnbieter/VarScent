@@ -308,6 +308,7 @@ public class DiagnosticTestController : MonoBehaviour
             if (atomizerControl.breakTimer <= 0)
             {
                 ConfigureTest();
+                logCompiler.hasPlayed = false; //resets the UI sound
                 atomizerControl.scentTimer = 1;
                 atomizerControl.RunTest();
                 testPrep = false;

@@ -29,7 +29,10 @@ public class RaycastingLogInfo : MonoBehaviour
     [SerializeField] private string selectableTag = "Selectable";
     private Transform _selection;
 
+    public AudioClip selectClip;
     public AudioSource selectSound;
+
+    public bool hasPlayed = false;
 
     public int tutScore;
 
@@ -80,15 +83,19 @@ public class RaycastingLogInfo : MonoBehaviour
                 }
             }
 
+            
+
             //If player looks away from object, deactivate selection material
-            if (_selection != null)
+            /*if (_selection != null)
             {
                 var selectionRenderer = _selection.GetComponent<DiagnosticSelectable>();
                 selectionRenderer.isSelected = false;
                 //selectionRenderer.material = defaultMaterial;
                 _selection = null;
-            }
+                _hasPlayed = false;
+            }*/
 
+            
             //If player looks at a selectable object, enable selection material
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))
@@ -97,11 +104,25 @@ public class RaycastingLogInfo : MonoBehaviour
                     
                 if (selectionRenderer != null && selectionRenderer.isSelected == false)
                 {
+                    //Debug.Log("Looking at " + lookObject.name);
                     selectionRenderer.isSelected = true;
-                    selectSound.pitch = Random.Range(0.95f, 1.2f);
-                    selectSound.Play();
+                    if (!hasPlayed)
+                    {
+                        Debug.Log(hasPlayed);
+                        selectSound.PlayOneShot(selectClip, 1);
+                        hasPlayed = true;
+                    }
                 }
                 _selection = selection;
+                
+            }
+            else
+            {
+                var selectionRenderer = _selection.GetComponent<DiagnosticSelectable>();
+                selectionRenderer.isSelected = false;
+                //selectionRenderer.material = defaultMaterial;
+                _selection = null;
+                hasPlayed = false;
             }
             //Debug.Log(lookObject.name);
         }
