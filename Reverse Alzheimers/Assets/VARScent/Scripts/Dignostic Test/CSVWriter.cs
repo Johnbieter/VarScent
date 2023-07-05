@@ -39,6 +39,12 @@ public class CSVWriter : MonoBehaviour
     {
         //filename = Application.dataPath + "/test.csv";
         info = GetComponent<RaycastingLogInfo>();
+
+        //If data dump folder does not exist create one
+        if(!Directory.Exists(Application.dataPath + "/VARScentData"))
+        {
+            Directory.CreateDirectory(Application.dataPath + "/VARScentData");
+        }
     }
 
 
@@ -85,13 +91,13 @@ public class CSVWriter : MonoBehaviour
     //Creates the CSV file
     public void WriteCSV()
     {
-        TextWriter tw = new StreamWriter(Application.dataPath + "/" + filename + ".csv", false);
-        tw.WriteLine("Scent, timeToObject, timeonwrong, timeoncorrect"); //Creates columns
+        TextWriter tw = new StreamWriter(Application.dataPath + "/VARScentData/" + filename + ".csv", false);
+        tw.WriteLine("Scent, Time To Object, Time On Wrong, Time On Correct"); //Creates columns
         tw.Close();
 
         if (myDataList.data.Count > 0)
         {
-            tw = new StreamWriter(Application.dataPath + "/" + filename + ".csv", true); //Might have it save into a Data Dump folder -- will have to figure that out...
+            tw = new StreamWriter(Application.dataPath + "/VARScentData/" + filename + ".csv", true); //Might have it save into a Data Dump folder -- will have to figure that out...
 
             for (int i = 0; i < myDataList.data.Count; i++)
             {
