@@ -11027,7 +11027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3054075884060524567, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
       propertyPath: portName
-      value: COM4
+      value: COM3
       objectReference: {fileID: 0}
     - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
       propertyPath: scentTime
@@ -20456,7 +20456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 334115904155660241, guid: 770d36e217c5a1a4c9200430a8724bb2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 602622283044316061, guid: 770d36e217c5a1a4c9200430a8724bb2, type: 3}
       propertyPath: m_RootOrder
@@ -20468,7 +20468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 602622283044316061, guid: 770d36e217c5a1a4c9200430a8724bb2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.09
+      value: -9.6
       objectReference: {fileID: 0}
     - target: {fileID: 602622283044316061, guid: 770d36e217c5a1a4c9200430a8724bb2, type: 3}
       propertyPath: m_LocalPosition.z
