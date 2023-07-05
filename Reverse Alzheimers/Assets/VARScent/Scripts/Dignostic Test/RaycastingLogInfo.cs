@@ -108,7 +108,7 @@ public class RaycastingLogInfo : MonoBehaviour
                     selectionRenderer.isSelected = true;
                     if (!hasPlayed)
                     {
-                        Debug.Log(hasPlayed);
+                        //Debug.Log(hasPlayed);
                         selectSound.PlayOneShot(selectClip, 1);
                         hasPlayed = true;
                     }
