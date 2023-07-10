@@ -83,19 +83,19 @@ public class RaycastingLogInfo : MonoBehaviour
                 }
             }
 
-            
+
 
             //If player looks away from object, deactivate selection material
-            /*if (_selection != null)
+            if (_selection != null)
             {
                 var selectionRenderer = _selection.GetComponent<DiagnosticSelectable>();
                 selectionRenderer.isSelected = false;
                 //selectionRenderer.material = defaultMaterial;
                 _selection = null;
-                _hasPlayed = false;
-            }*/
+               // _hasPlayed = false;
+            }
 
-            
+
             //If player looks at a selectable object, enable selection material
             var selection = hit.transform;
             if (selection.CompareTag(selectableTag))
@@ -118,10 +118,6 @@ public class RaycastingLogInfo : MonoBehaviour
             }
             else
             {
-                var selectionRenderer = _selection.GetComponent<DiagnosticSelectable>();
-                selectionRenderer.isSelected = false;
-                //selectionRenderer.material = defaultMaterial;
-                _selection = null;
                 hasPlayed = false;
             }
             //Debug.Log(lookObject.name);

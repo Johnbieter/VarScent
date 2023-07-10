@@ -60,6 +60,8 @@ public class DiagnosticTestController : MonoBehaviour
     //[SerializeField] TMP_InputField setComPort;
     [SerializeField] TMP_Dropdown setComPort;
     [SerializeField] TMP_Dropdown[] atomizerContents;
+    public GameObject startTestBtn;
+    public GameObject compileDataBtn;
 
 
     [SerializeField] SerialController serial;
@@ -299,6 +301,8 @@ public class DiagnosticTestController : MonoBehaviour
         if (testPrep)
         {
             //Break timer in the scene
+            startTestBtn.SetActive(false);
+            compileDataBtn.SetActive(false);
             atomizerControl.breakTimer -= Time.deltaTime;
             breakTimerDisplay.text = "Break: " + Mathf.Round(atomizerControl.breakTimer).ToString();
             scentTimerDisplay.enabled = false;
@@ -340,6 +344,8 @@ public class DiagnosticTestController : MonoBehaviour
                 CompileData();
                 testComplete = true;
                 DestoryObjects();
+                startTestBtn.SetActive(true);
+                compileDataBtn.SetActive(true);
 
             }
 

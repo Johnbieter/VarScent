@@ -2152,6 +2152,8 @@ MonoBehaviour:
   - {fileID: 836879263}
   - {fileID: 1592049367}
   - {fileID: 1605603179}
+  startTestBtn: {fileID: 442490024}
+  compileDataBtn: {fileID: 1246205448}
   serial: {fileID: 2145889632}
 --- !u!1 &273468527
 GameObject:
@@ -11028,6 +11030,10 @@ PrefabInstance:
     - target: {fileID: 3054075884060524567, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
       propertyPath: portName
       value: COM3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3054075884060524567, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
+      propertyPath: reconnectionDelay
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 5945272641441199462, guid: 943f2bc39ef881b4d917a84554f5e269, type: 3}
       propertyPath: scentTime
