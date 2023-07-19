@@ -29,10 +29,10 @@ public class TutorialController : MonoBehaviour
         if (playerInsideTutorial)
         {
             logCompiler.RecordTestInfo(objs);
-            score.text = logCompiler.tutScore + "/5";
+            score.text = logCompiler.tutScore + "/8";
         }
 
-        if(logCompiler.tutScore == 5)
+        if(logCompiler.tutScore == 8)
         {
             TutText.enabled = false;
             scoreText.text = "All objects found!";

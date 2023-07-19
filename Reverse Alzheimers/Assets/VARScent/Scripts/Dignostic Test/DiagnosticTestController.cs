@@ -47,6 +47,8 @@ public class DiagnosticTestController : MonoBehaviour
 
     private int index;
 
+    private int roundCounter;
+
     bool testPrep = false;
     bool testComplete = true;
 
@@ -344,12 +346,19 @@ public class DiagnosticTestController : MonoBehaviour
                 CompileData();
                 testComplete = true;
                 DestoryObjects();
-                startTestBtn.SetActive(true);
                 compileDataBtn.SetActive(true);
-
+                if (roundCounter < 4)
+                {
+                    startTestBtn.SetActive(true);
+                }
             }
 
         }
+    }
+
+    public void RoundCounter()
+    {
+        roundCounter++;
     }
 
     // ---- Compile all the data gathered ----
