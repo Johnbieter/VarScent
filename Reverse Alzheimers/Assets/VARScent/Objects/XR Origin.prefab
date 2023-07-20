@@ -207,6 +207,7 @@ MonoBehaviour:
   myDataList:
     data: []
   info: {fileID: 9022025782664990827}
+  scoreTxt: {fileID: 0}
 --- !u!1 &9022025784173709067
 GameObject:
   m_ObjectHideFlags: 0
