@@ -18,12 +18,13 @@ When memory timer is up, test coordinator compiles data to CSV file.
 
 public class GameController : MonoBehaviour
 {
-    //References
+
     [SerializeField] private float timeToRemember;
 
     [SerializeField] private GameObject player;
 
-    [SerializeField] Transform spawnpoint;
+    [SerializeField] Transform rememberSpawnpoint;
+    [SerializeField] Transform testSpawnpoint;
 
     [SerializeField] private float timeToTeleport;
 
@@ -33,7 +34,7 @@ public class GameController : MonoBehaviour
     private bool testFinished;
     private bool timerFinished = false;
     public bool startRemember = false;
-    
+    private bool isTeleporting = false;
 
     public UnityEvent onTimerFinished;
     public UnityEvent onTestStart;
@@ -54,7 +55,7 @@ public class GameController : MonoBehaviour
 
     [SerializeField] SerialController serialController;
 
-    private void FixedUpdate()
+    private void Update()
     {
 
         if (!startRemember) return;
@@ -64,7 +65,16 @@ public class GameController : MonoBehaviour
             if (timeToRemember <= 0)
             {
                 onTimerFinished.Invoke();
-                Invoke("MoveToTest", timeToTeleport);
+                //Invoke("MoveToTest", timeToTeleport);
+                if (!isTeleporting)
+                {
+                    StartCoroutine(MoveToTestCoroutine());
+                    testStarted = true;
+                    for (var i = 0; i < objectList.Count; i++)
+                    {
+                        objectList[i].GetComponent<Selectable>().TestStart();
+                    }
+                }
                 timerFinished = true;
             }
             else
@@ -91,25 +101,56 @@ public class GameController : MonoBehaviour
         }
     }
 
-    //Sends player to test area and run onTestStart events
-    //Also puts all the selectable objects into the objectList
-    public void MoveToTest()
+    private IEnumerator MoveToRememberCoroutine()
     {
-        player.transform.position = spawnpoint.position;
+        isTeleporting = true;
+        yield return new WaitForSeconds(timeToTeleport);
         onTestStart.Invoke();
-        testStarted = true;
-        for (var i = 0; i < objectList.Count; i++)
-        {
-            objectList[i].GetComponent<Selectable>().TestStart();
-        }
+        player.transform.position = rememberSpawnpoint.position;
+        isTeleporting = false;
+    }
+    private IEnumerator MoveToTestCoroutine()
+    {
+        isTeleporting = true;
+        yield return new WaitForSeconds(timeToTeleport);
+        player.transform.position = testSpawnpoint.position;
+        onTestStart.Invoke();
+        isTeleporting = false;
     }
 
+/*    public void MoveToRemember()
+    {
+        if(!isTeleporting)
+        {
+            StartCoroutine(MoveToRememberCoroutine());
+        }
+    }
+*/
+    //Sends player to test area and run onTestStart events
+    //Also puts all the selectable objects into the objectList
+/*    public void MoveToTest()
+    {
+        if (!isTeleporting)
+        {
+            StartCoroutine(MoveToTestCoroutine());
+            testStarted = true;
+            for (var i = 0; i < objectList.Count; i++)
+            {
+                objectList[i].GetComponent<Selectable>().TestStart();
+            }
+        }
+    }
+*/
     //Takes UI input and assigns it to variables as well as populates the file name in the compileMemoryTest component.
     public void StartRemember()
     {
-
         //serialController.RePort();
-
+        onTimerFinished.Invoke();
+        //Invoke("MoveToRemember", timeToTeleport);
+        if (!isTeleporting)
+        {
+            StartCoroutine(MoveToRememberCoroutine());
+        }
         startRemember = true;
         timeToRemember = float.Parse(rememberInput.text, CultureInfo.InvariantCulture.NumberFormat);
         timeToTest = float.Parse(testInput.text, CultureInfo.InvariantCulture.NumberFormat);

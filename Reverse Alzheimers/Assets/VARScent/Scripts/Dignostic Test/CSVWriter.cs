@@ -5,7 +5,8 @@ using TMPro;
 using UnityEngine;
 
 /*----------------------------------------------------------------------------------------------------
-This script takes all the data from DiagnosticSelectable.cs and creates a CSV file to study scent age
+This script takes all the data from DiagnosticSelectable.cs and creates a CSV file and a score for the
+user.
 -----------------------------------------------------------------------------------------------------*/
 
 public class CSVWriter : MonoBehaviour

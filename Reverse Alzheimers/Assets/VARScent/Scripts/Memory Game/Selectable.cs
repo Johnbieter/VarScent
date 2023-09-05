@@ -10,6 +10,8 @@ public class Selectable : MonoBehaviour
 {
     public bool correct;
     public bool selected = false;
+    public bool tutSelected = false;
+
     public float timeLookedAt;
     public Material originalMaterial;
     public float timeSelected;

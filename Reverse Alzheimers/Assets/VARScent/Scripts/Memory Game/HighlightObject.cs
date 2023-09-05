@@ -5,7 +5,8 @@ using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
 /*-----------------------------------------------------------------
- Script will detect if player is point at an object and if they
+-----------------OLD SCRIPT---------------------------------------- 
+Script will detect if player is point at an object and if they
 press a button. If its on a selectable object then it will register
 the selection and enable the selection material.
 -------------------------------------------------------------------*/
@@ -34,7 +35,7 @@ public class HighlightObject : MonoBehaviour
         if (!rightHand)
         {
             List<InputDevice> devices = new List<InputDevice>();
-            var desiredCharacteristics = InputDeviceCharacteristics.HeldInHand | UnityEngine.XR.InputDeviceCharacteristics.Left | UnityEngine.XR.InputDeviceCharacteristics.Controller;
+            var desiredCharacteristics = InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.Left | InputDeviceCharacteristics.Controller;
             InputDevices.GetDevicesWithCharacteristics(desiredCharacteristics, devices);
             if (devices.Count > 0)
             {
@@ -45,7 +46,7 @@ public class HighlightObject : MonoBehaviour
         else
         {
             List<InputDevice> devices = new List<InputDevice>();
-            var desiredCharacteristics = InputDeviceCharacteristics.HeldInHand | UnityEngine.XR.InputDeviceCharacteristics.Right | UnityEngine.XR.InputDeviceCharacteristics.Controller;
+            var desiredCharacteristics = InputDeviceCharacteristics.HeldInHand | InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
             InputDevices.GetDevicesWithCharacteristics(desiredCharacteristics, devices);
             if (devices.Count > 0)
             {
