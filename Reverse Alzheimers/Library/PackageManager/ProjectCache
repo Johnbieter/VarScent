@@ -5,15 +5,15 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638212463374731886
-    m_Hash: 1487587203
+      ticks: 638214197540886890
+    m_Hash: 1743301225
   m_LockFileStatus:
     m_FilePath: C:/Users/carso/OneDrive/Desktop/VARScent/VarScent/Reverse Alzheimers/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638236695811653319
+      ticks: 638235716593715722
     m_Hash: 3518246548
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -177,16 +177,18 @@ m_ResolvedPackages:
     - 2.0.3
     - 2.0.4
     - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
     - 2.0.4
     - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
-    recommended: 2.0.5
+    recommended: 2.0.7
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -373,9 +375,11 @@ m_ResolvedPackages:
     - 2.0.16
     - 2.0.17
     - 2.0.18
+    - 2.0.20
     compatible:
     - 2.0.18
-    recommended: 2.0.18
+    - 2.0.20
+    recommended: 2.0.20
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -546,6 +550,7 @@ m_ResolvedPackages:
     - 1.3.5
     - 1.3.7
     - 1.3.8
+    - 1.3.9
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -560,6 +565,7 @@ m_ResolvedPackages:
     - 1.3.5
     - 1.3.7
     - 1.3.8
+    - 1.3.9
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -891,6 +897,7 @@ m_ResolvedPackages:
     - 1.8.2
     - 1.8.3
     - 1.8.4
+    - 1.8.5
     compatible:
     - 1.7.4
     - 1.7.5
@@ -899,6 +906,7 @@ m_ResolvedPackages:
     - 1.8.2
     - 1.8.3
     - 1.8.4
+    - 1.8.5
     recommended: 1.7.5
     deprecated: []
   dependencies:
@@ -1080,12 +1088,16 @@ m_ResolvedPackages:
     - 2.4.0-pre.2
     - 2.4.0
     - 2.4.1
+    - 2.4.3
+    - 2.5.0
     compatible:
     - 2.3.2
     - 2.4.0-pre.1
     - 2.4.0-pre.2
     - 2.4.0
     - 2.4.1
+    - 2.4.3
+    - 2.5.0
     recommended: 2.3.2
     deprecated: []
   dependencies:
@@ -3514,9 +3526,13 @@ m_ResolvedPackages:
     - 1.5.1
     - 1.6.1
     - 1.6.3
+    - 1.7.0
+    - 1.8.0-pre.1
     compatible:
     - 1.6.1
     - 1.6.3
+    - 1.7.0
+    - 1.8.0-pre.1
     recommended: 1.6.3
     deprecated: []
   dependencies:
@@ -3604,8 +3620,10 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.2.5
     - 1.2.6
+    - 1.3.1
     compatible:
     - 1.2.6
+    - 1.3.1
     recommended: 1.2.6
     deprecated: []
   dependencies: []
@@ -3678,12 +3696,18 @@ m_ResolvedPackages:
     - 2.2.0
     - 2.2.1
     - 2.2.2
+    - 2.2.3
+    - 2.3.0-pre.1
     - 2.4.0-exp.1
+    - 2.4.0-exp.2
     compatible:
     - 2.2.1
     - 2.2.2
+    - 2.2.3
+    - 2.3.0-pre.1
     - 2.4.0-exp.1
-    recommended: 2.2.2
+    - 2.4.0-exp.2
+    recommended: 2.2.3
     deprecated: []
   dependencies:
   - name: com.unity.modules.xr
