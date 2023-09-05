@@ -4,6 +4,7 @@ using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /*------------------------------------------------------------------------------
@@ -167,5 +168,10 @@ public class GameController : MonoBehaviour
         {
             arduinoSettings.RunTest();
         }
+    }
+
+    public void GameRestart()
+    {
+        SceneManager.LoadScene("TherapyTestScene");
     }
 }
