@@ -4089,7 +4089,7 @@ MonoBehaviour:
   objs:
   - {fileID: 1879100419}
   - {fileID: 1024875138}
-  - {fileID: 746194795}
+  - {fileID: 46590067}
   - {fileID: 782447351}
   - {fileID: 608864787}
   TutText: {fileID: 298420585}
@@ -27585,6 +27585,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 407928b4fe296c4419b2bdd4d8783b47, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 407928b4fe296c4419b2bdd4d8783b47, type: 3}
+      propertyPath: m_TagString
+      value: Selectable
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 407928b4fe296c4419b2bdd4d8783b47, type: 3}
       propertyPath: m_StaticEditorFlags
