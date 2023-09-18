@@ -118,7 +118,6 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
         scentTimer -= Time.deltaTime;
     }
 
-    //Might not need this? - C
     public void StopTest()
     {
         ToggleFirstAtomizer(false);
