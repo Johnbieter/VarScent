@@ -16,9 +16,13 @@ public class OnButtonClick : MonoBehaviour
 
     [SerializeField] XRRayInteractor rayInteractor;
     [SerializeField] Material onSelectMaterial;
+    [SerializeField] AudioSource source;
+    [SerializeField] AudioClip clip;
 
     public float selectTimeOut = 0.5f;
     public bool canSelect = true;
+
+    private Material objectsMaterial;
 
     // When the button is pressed
     public UnityEvent OnPress = new UnityEvent();
@@ -81,15 +85,47 @@ public class OnButtonClick : MonoBehaviour
                     hitSelect.selected = !hitSelect.selected;
                     if (hitSelect.selected)
                     {
-                        //Turn on selected material
-                        hit.transform.gameObject.GetComponent<MeshRenderer>().material = onSelectMaterial;
-                        hit.transform.gameObject.tag = "Unselectable";
+                        if (hitSelect.originalMaterial != null)
+                        {
+                            objectsMaterial = hit.transform.gameObject.GetComponent<MeshRenderer>().material; //TEST
+
+                            //Turn on selected material
+                            hit.transform.gameObject.GetComponent<MeshRenderer>().material = onSelectMaterial;
+                            hit.transform.gameObject.tag = "Unselectable";
+
+                            source.pitch = 1.3f;
+                            source.PlayOneShot(clip, 1f);
+                        }
+                        else //TEST--
+                        {
+                            objectsMaterial = hit.transform.gameObject.GetComponentInChildren<MeshRenderer>().material;
+
+                            hit.transform.gameObject.GetComponentInChildren<MeshRenderer>().material = onSelectMaterial;
+                            hit.transform.gameObject.tag = "Unselectable";
+
+                            source.pitch = 1.3f;
+                            source.PlayOneShot(clip, 1f);
+                        }//--TEST
                     }
                     else
                     {
-                        //Turn off selected material
-                        hit.transform.gameObject.GetComponent<MeshRenderer>().material = hitSelect.originalMaterial;
-                        hit.transform.gameObject.tag = "Selectable";
+                        if (hitSelect.originalMaterial != null)
+                        {
+                            //Turn off selected material
+                            hit.transform.gameObject.GetComponent<MeshRenderer>().material = hitSelect.originalMaterial;
+                            hit.transform.gameObject.tag = "Selectable";
+
+                            source.pitch = 0.7f;
+                            source.PlayOneShot(clip, 1f);
+                        }
+                        else //TEST--
+                        {
+                            hit.transform.gameObject.GetComponentInChildren<MeshRenderer>().material = hitSelect.originalMaterial;
+                            hit.transform.gameObject.tag = "Selectable";
+
+                            source.pitch = 0.7f;
+                            source.PlayOneShot(clip, 1f);
+                        }//--TEST
                     }
 
                 }

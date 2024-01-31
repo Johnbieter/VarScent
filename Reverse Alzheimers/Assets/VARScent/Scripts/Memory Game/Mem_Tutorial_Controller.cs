@@ -24,16 +24,16 @@ public class Mem_Tutorial_Controller : MonoBehaviour
                     obj.GetComponent<Selectable>().tutSelected = true;
                 }
             }
-            TutText.text = TutCounter.ToString() + "/5 objects found.";
+            TutText.text = TutCounter.ToString() + "/7 objects found.";
         }
 
-        if (TutCounter == 5)
+        if (TutCounter == 7)
         {
             TutText.text = "All objects found!";
         }
         else
         {
-            TutText.text = TutCounter.ToString() + "/5 objects found.";
+            TutText.text = TutCounter.ToString() + "/7 objects found.";
         }
     }
 
