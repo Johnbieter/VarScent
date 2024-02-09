@@ -23,6 +23,11 @@ public class Mem_Tutorial_Controller : MonoBehaviour
                     TutCounter++;
                     obj.GetComponent<Selectable>().tutSelected = true;
                 }
+                else if(obj.GetComponent<Selectable>().selected == false && obj.GetComponent<Selectable>().tutSelected == true)
+                {
+                    TutCounter--;
+                    obj.GetComponent<Selectable>().tutSelected = false;
+                }
             }
             TutText.text = TutCounter.ToString() + "/7 objects found.";
         }

@@ -70,7 +70,7 @@ public class OnButtonClick : MonoBehaviour
     //Function to call when the desired button is pressed. This will enable and disable the selection of objects and change thier material.
     public void HighlightObject()
     {
-        Debug.Log("Button is pressed!");
+        //Debug.Log("Button is pressed!");
         if (canSelect == true) //If the selection cooldown is done
         {
             canSelect = false;

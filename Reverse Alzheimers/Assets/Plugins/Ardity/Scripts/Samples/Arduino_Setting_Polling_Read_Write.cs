@@ -121,6 +121,7 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
     public void StopTest()
     {
         ToggleFirstAtomizer(false);
+        ToggleSecondAtomizer(false);
     }
 
     public void RunTest()
@@ -128,7 +129,7 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
         scentTimer = scentTime;
         breakTimer = breakTime;
 
-        if (isMemoryTest) { currentScent = 1; }
+        //if (isMemoryTest) { currentScent = 1; }
 
         if (currentScent == 1)
         {
@@ -141,8 +142,6 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
             }
         }
 
-        if (isMemoryTest) return;
-
         else if (currentScent == 2)
         {
             if (scentTimer > 0) ToggleSecondAtomizer(true);
@@ -152,6 +151,9 @@ public class Arduino_Setting_Polling_Read_Write : MonoBehaviour
                 if (breakTimer < 0) ResetTimes();   //Wait for break to be up before continuing onto next scent
             }
         }
+
+        if (isMemoryTest) return;
+
         else if (currentScent == 3)
         {
             if (scentTimer > 0) ToggleThirdAtomizer(true);

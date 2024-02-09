@@ -48,7 +48,8 @@ public class GameController : MonoBehaviour
     public InputField rememberInput;
     public InputField testInput;
     public InputField fileNameInput;
-    public Toggle useAtomizer;
+    public Toggle limoneneToggle;
+    public Toggle coffeeToggle;
     //public InputField portInput;
 
     [SerializeField] CompileMemoryTestData compileMemoryTest;
@@ -161,12 +162,20 @@ public class GameController : MonoBehaviour
        
 
        //Determinds if atomizer is in use for this test
-        arduinoSettings.useAtomizer = this.useAtomizer.isOn;
+       //arduinoSettings.useAtomizer = this.useAtomizer.isOn; <-- might need to keep this?
 
-        Debug.Log(useAtomizer.isOn);
-        if (useAtomizer.isOn)
+        //Debug.Log(useAtomizer.isOn);
+        if (limoneneToggle.isOn)
         {
-            arduinoSettings.RunTest();
+            Debug.Log("Limonene is selected...");
+            arduinoSettings.currentScent = 1;
+            //arduinoSettings.RunTest();
+        }
+        else if(coffeeToggle.isOn)
+        {
+            Debug.Log("Coffee is selected...");
+            arduinoSettings.currentScent = 2; 
+            //arduinoSettings.RunTest();
         }
     }
 
